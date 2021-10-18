@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsthm,amsfonts,amssymb}%paquetes AMS
+
+\title{An Subgrupo Normal de Sn}
+\author{wejerezh }
+\date{September 2021}
+
+\begin{document}
+
+%\maketitle
+
+\section{Sea $S_{n}$ el grupo simétrico de n-letras. \\ Demuestre que $A_{n} \trianglelefteq S_{n}$}
+\textbf{Preliminares}\\
+\textbf{Lema 1}\\
+Sea G un grupo y N un subgrupo de G. Son equivalentes las siguientes afirmaciones:
+\begin{enumerate}
+    \item aN = N a para cada a $\in$ G.
+    \item  Para cada a, b $\in$ G se tiene ab $\in$ N implica ba $\in$ N.
+    \item $aNa^{-1}$ = \{$ana^{-1} $ tal que n $\in$ N\} $\subseteq$ N para cada a $\in$ G.
+    \item $aNa^{-1}$ = N para cada a $\in$ G.
+\end{enumerate}
+\textbf{Lema 2}\\
+\begin{enumerate}
+    \item una permutación par $\circ $ una permutación par es una una permutación par
+    \item una permutación par $\circ $  una permutación impar es una permutaciónimpar
+    \item una permutación impar $\circ $ una permutación par es una permutación impar
+    \item una permutación impar $\circ $ una permutación impar es una permutación par
+    
+\end{enumerate}
+
+
+\textbf{Demostración}\\
+Sabemos que los $\sigma$ son pares o bien impares\\
+\newline
+\textit{caso 1} \\ sea $\sigma$ una permutación par entonces $\sigma =( (a_{1}a_{n})(a_{1}a_{n-1} ...(a_{1}a_{3})(a_{1}a_{2}) )$ consideremos pues a $\sigma^{-1} = ((a_{1}a_{2})^{-1}(a_{1}a_{3})^{-1}...(a_{1}a_{n-1})^{-1}(a_{1}a_{n})^{-1}$ puesto que $(ab)^{-1}= b^{-1}a^{-1}$ pero tambien sabemos que cualquier transposición es el inverso de si misma por lo tanto $\sigma^{-1} = ((a_{1}a_{2})(a_{1}a_{3})...(a_{1}a_{n-1})(a_{1}a_{n})$ y como el número de transposiciones de $\sigma^{-1}$ nunca cambia entonces $\sigma^{-1}$ es par y sea cualesquiera $\tau \in A_{n}$ por tanto $\tau$ es par y por lema 2 $\sigma \circ \tau$ es par y $\sigma \circ \tau \circ \sigma^{-1}$ es par por tanto $\sigma \circ \tau \circ \sigma^{-1}\subseteq A_{n}$ y por lema 1 $\sigma A_{n} = A_{n} \sigma$ para $\sigma$ par\\
+\newline
+\textbf{caso 2} \\
+sea $\sigma$ una permutación impar entonces $\sigma =( (a_{1}a_{n})(a_{1}a_{n-1} ...(a_{1}a_{3})(a_{1}a_{2}) )$ consideremos pues a $\sigma^{-1} = ((a_{1}a_{2})^{-1}(a_{1}a_{3})^{-1}...(a_{1}a_{n-1})^{-1}(a_{1}a_{n})^{-1}$ puesto que $(ab)^{-1}= b^{-1}a^{-1}$ pero tambien sabemos que cualquier transposición es el inverso de si misma por lo tanto $\sigma^{-1} = ((a_{1}a_{2})(a_{1}a_{3})...(a_{1}a_{n-1})(a_{1}a_{n})$ y como el número de transposiciones de $\sigma^{-1}$ nunca cambia entonces $\sigma^{-1}$ es impar y sea cualesquiera $\tau \in A_{n}$ por tanto $\tau$ es par y por lema 2 $\sigma \circ \tau$ es impar y $\sigma \circ \tau \circ \sigma^{-1}$ es par por tanto $\sigma \circ \tau \circ \sigma^{-1}\subseteq A_{n}$ y por lema 1 $\sigma A_{n} = A_{n} \sigma$ para $\sigma$ impar\\
+\newline
+por \textbf{caso 1} y \textbf{caso 2} $\sigma A_{n} = A_{n} \sigma$ para cada $\sigma \in S_{n}$ $\hfill\square$.
+
+
+
+
+\end{document}
