@@ -119,10 +119,10 @@ INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
+OUTPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.pdf
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
 OUTPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
-OUTPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.pdf
 INPUT diapositivas de presentación/presentación_creatividad_financiera.tex
 INPUT diapositivas de presentación/presentación_creatividad_financiera.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map
@@ -130,8 +130,14 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.toc
+INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+OUTPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.toc
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.aux
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
 INPUT /home/wilson/Escritorio/tex/platzi/build/creatividadfinancier.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
