@@ -12,3 +12,5 @@
 \contentsline {section}{\numberline {5}Por qué tener tu marca personal en YouTube}{5}{section.5}%
 \contentsline {section}{\numberline {6}Crea tu canal de YouTube}{5}{section.6}%
 \contentsline {section}{\numberline {7}Tu portafolio es tu mejor currículum}{5}{section.7}%
+\contentsline {section}{\numberline {8}Cómo llamar la atención de reclutadores}{6}{section.8}%
+\contentsline {section}{\numberline {9}Tips para entrevistas de trabajo}{6}{section.9}%
