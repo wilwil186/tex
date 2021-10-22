@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsthm,amsfonts,amssymb}%paquetes AMS
+\usepackage{hyperref}
+
+\begin{document}
+
+    \input{diapositivas de presentación/presentacion_IDB.tex}
+
+    \section{Te doy la bienvenida al desarrollo backend}
+    el mundo esta lleno de aplicaciones web. ellas nacen en la web. 
+    \section{Yin y Yang de una aplicación: frontend y backend}
+    la corroceria es el acara visible del auto, y otro componente impotarte es el motor.
+    ahora piensa en aplicaciones. igual que los carros tienen lo mismos componente "relativamente".
+    en tecnologia la correceria: es el frontend y el motor es el backend.
+    python es un lenguaje para onstruir backend. las tecnologias principales del frontend son: 
+    \begin{enumerate}
+        \item html
+        \item css
+        \item JavaScript
+    \end{enumerate}
+    esos son los basicos. css estilos. JS interacción. html una estrcutura.
+    cada lenguaje tiene sus derivados piensa como si fuera codigo estrito por demas personas.
+    en backend se pueden utilizar lenguajes de progamación como:
+    \begin{enumerate}
+        \item JavaScript
+        \item php 
+        \item Java
+        \item Go
+        \item Rust
+        \item Ruby
+        \item python
+    \end{enumerate}
+    y seguramente hay muchos mas. y cada uno de estos lenguajes tienen sus derivados.
+    \section{Framework vs. librería}
+    ¿como se construye un auto? comenzamos por el motor, tenemos que empezar por un lado.
+    seguramente hay una guia para hacer el motor, a esto en progamación se le llama libreria.
+    las reglas para contruiir el motor, se le llama Framework, en español un marco de trabajo.
+    el Framework usualmente es un conjunto de librerias de paosos y recetas para contruir un motor.
+    \section{Cómo se conecta el frontend con el backend: API y JSON}
+    API Y JASON.
+    una API es solo una sección de motor que permite que el frontend se comunique con el backend.
+    dos grandes estadares son \textbf{SOAP} o simple obeject access protocol, y \textbf{REST} o representational state transfer.
+    este primer estandar mueve la informacion con \textbf{XML} extensible markup languague parecido a html.
+    soap a quedado un poco en el olvido :'(. 
+    por culpa de JASON por ser superior. 
+    un JASON es como un diccionario de python.
+    los diccionario en python son iguales a los objetos en JS.
+    \section{El lenguaje que habla Internet: HTTP}
+
+    \url{https://developer.mozilla.org/es/docs/Web/HTTP/Status}
+
+    \textbf{cliente}: dispositivos. \textbf{servidor}: una computadora del dia encendida 24/7
+    protocolo de tranferencia de hipertexto. el cliente hace la peticion en idioma HTTP.
+    200 es ok. dentro del rango de los 400 es que algun recurso no es encontrado. 
+    si esta en el ranfo de los 500 hay un error en el codigo.
+    \textbf{tarea investicar los estatus code}
+    \section{¿Cómo es el flujo de desarrollo de una aplicación web?}
+    el lugar en el que comienzas a trabajar es tu editor de texto. git sistema de control de versiones.
+    browser (navegador). 
+    en el servidor se coloca una aplicación para que este disponible para todos.
+    esto se denomida deploy(pasar de el entorno de trabajo a un resposorio). normalmente se hace un push a github antes.
+    desde github se hace \textbf{CI/CD}. este porceso lo que hace es testarlo. y si todo esta ok se envia a el servidor.
+    el servidor guarda el codigo es un servidor. normalmente son de paga pero se pueden conseguir algunas de manera gratuita.
+    la nube es una forma popular de llamar a muchos servidores.
+    \section{El hogar de tu código: el servidor}
+    los servidores estan en datacenters.al hecho de guardar una aplicacion
+    en un servidor se le denomina hosting. hay distintos tipos de hosting. entendamos 3 conceptos
+    \begin{enumerate}
+        \item iass (infrastutura como servivio). es una opción cuando quiereas tener control como la cpu la ram y la ssd, esta \begin{enumerate}
+            \item Aws (amazon web services) 
+            \item microsoft azure
+            \item digital ocean (economico)
+        \end{enumerate}
+        vas a encontrar dos tipos de iass en internet 
+        \begin{enumerate}
+            \item VPS(virtual private server). para rendimiento superior.
+            \item shared hosting. alojamiento compartido. es mas barato.
+        \end{enumerate}
+        \item pass (plataforma como servicio).se encarga de actualizar, tu rela. 
+        just deploy. opciones: \begin{enumerate}
+            \item google aee engine. servicio de google cload
+            \item firebase. un poco mas complejas.
+            \item heroku. 
+        \end{enumerate}
+        \item sass (software como servico). no reinventar la rueda. no code. 
+        es una aplicacion que un provedor te presta para que puedas hacer funcionar tu servicio.
+        \begin{enumerate}
+            \item google docs.
+            \item slack.
+            \item wordpress.
+        \end{enumerate}
+        
+    \end{enumerate}    
+    hay que elegir una de ellas cuando se publica tu aplicacion
+\end{document}
