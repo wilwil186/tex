@@ -111,5 +111,69 @@
     \end{enumerate}
     \textbf{endpoint/route/path} es simplemente una section de la url de tu Proyecto.
     normalmente seria http://twiteer.com/api/... lo que esta despues de dominio seria el endpoint
-
+    \section{Proyecto: diseñando los endpoints de los Tweets}
+    los endpoints de los Tweets. las reglas que nos proporcionan
+    \textbf{CRUD} create Read Update Delete. 
+    los endpoints para los Tweets serian:
+    \begin{enumerate}
+        \item /Tweets -> show all Tweets
+        \item /post -> publish a Tweet
+        \item /Tweets / {Tweet.id} -> show a tweet
+        \item /Tweets/{Tweet.id}/update -> update a Tweets
+        \item /Tweets/{tweet.id}/delete -> delete a tweet
+    \end{enumerate}
+    \section{proyecto: diseñando los endpoints para los usuarios}
+    hay dos modelos: \begin{enumerate}
+        \item Tweets
+        \item users
+    \end{enumerate}
+    a los modelos se los conoce como tablas en sql. cada uno de estos modelos contiene registros.
+    los enpoints para los usuarios serian \begin{enumerate}
+        \item /users -> show all users
+        \item /signup -> registrer a user.
+        \item / users/{user.id} -> show a user.
+        \item /user/{user.id}/update -> update a user.
+        \item /user/{user.id}/delete -> delete a user.
+    \end{enumerate}
+    cada vez que entremos a un endpoint el servidor nos responde con un archivo de JASON
+    es proplabe de lusca de la sigueinete manera:\\
+    {
+        \begin{center}
+        "user.id": 121\\
+        "username" : facmartoni\\
+        "email" x@x.com\\
+        \end{center}
+    }
+    lectura recomendada: \url{https://elbauldelprogramador.com/buenas-practicas-para-el-diseno-de-una-api-restful-pragmatica/}
+    \section{Qué lenguaje y framework escoger para backend}
+    python tiene 3 framework:
+    \begin{enumerate}
+        \item Django. es el mas robusto y mas grande, tienes un panel de administración bastante completo.
+        si vas a trabajar con muchos datos. comunidad enorme. 
+        \item flask. aplicaciones simples, muy flexive. algo personalizable.
+        \item fast api. mucho mas rapida. 
+    \end{enumerate}
+    JavaScript:
+    \begin{enumerate}
+        \item express. simple.
+        \item nest. complejidad mayor. 
+    \end{enumerate}
+    php:
+    \begin{enumerate}
+        \item laravel.es el mas facil. 
+        \item sympony. mas dificil. mas escaleble mas compleja.
+    \end{enumerate}
+    java:
+    \begin{enumerate}
+        \item spring. 
+    \end{enumerate}
+    Go:
+    \begin{enumerate}
+        \item gin. por excelencia mas popular.
+        \item beego. crecimiento.
+    \end{enumerate}
+    ruby:
+    \begin{enumerate}
+        \item rails
+    \end{enumerate}
 \end{document}
