@@ -1,20 +1,26 @@
+
 \documentclass{article}
 \usepackage[utf8]{inputenc}
-\usepackage{hyperref}
+\usepackage[spanish]{babel}
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{amsthm,amsfonts,amssymb}%paquetes AMS
- 
+\usepackage{hyperref}
+
 \begin{document}
+
+
     \section{Introducción a las ecuaciones diferenciales}
+
     \subsection{Importancia de las ecuaciones diferenciales}
     La importantancia de las ecuaciones diferenciales son la expresión 
     matemática de aquéllas leyes fundamentales 
     de la naturaleza que son formuladas en términos de razones de cambio
     de cantidades variables.
     Estas leyes surgen en diversos campos de aplicaclión por ejemplo:
+
     \begin{enumerate}
         \item movimiento newtonianos y no newtonianos.
         \item difusión de calor
@@ -25,18 +31,149 @@
         \item ecologia
         \item ciencias sociales 
     \end{enumerate}
+
     y muchos otros.
     \subsection{Estudio de las soluciones de una ecuación diferencial}
+
     el análisis de las soluciones tanto teóricas como numéricas de las ecuaciones
     diferenciales es fundamental para la investigación y compresión de los fenómenos naturales
     o teóricos que representan; tanto el estudio de las propiedades generales de las ecuaciones, que nos 
     proporciona información valiosa que se puede aplicar en cada cado particular: como su complemento, la resolución numérica,
     que permite contruir soluciones de una ecuación, paso a paos en la vecindad de un punto y con cierto margen de error.
+    
     \subsection{Ecuación diferencial}
     En términos generales, una ecuación diferencial es una ecuación que 
     contiene derivadas de las funciones que aparecen en la ecuación.
     \\
     \textbf{Ejemplo:}
     \\
+    $2y''-y'+y=0$
+    \\ 
+    Aquí debemos encontrar la función y que satisfaga la ecuación dada.
     
+    \subsection{Clasificación de las ecuaciones diferenciales}
+    Las ecuaciones diferenciales se clasifican de acuerdo a:
+    Tipo, orden y linealidad.
+    
+    \begin{enumerate}
+        \item Según el Tipo: en ecuación diferencial o ecuación diferencial en derivadas parciales.
+        \item Según el orden: El orden de una ecuación diferncial corresponde al orden de la derivada más alta que aparece en la ecuación.
+        \item Según la linealidad.
+    \end{enumerate}
+
+    \subsection{Ecuación diferencial ordinaria}
+    Una ecuación diferencial ordinaria (e.d.o) es una ecuación que relaciona 
+    una función desconocida de una variable con una o más funciones de sus derivadas.
+    En general, estas ecuaciones difernciales son expresadas del tipo
+
+    \begin{equation}
+        f(t,x(t),x'(t),..., x^{n}(t))=0
+    \end{equation}
+    donde
+
+    \begin{enumerate}
+        \item t: tiempo o variable independiente, t $\in$ I con I $\subseteq  R$
+        \item x: variable dependiente, x=x(t) es una función que satisface (1)
+        \item $F: I \times R^{n+1} \rightarrow R$ donde\\ 
+        $(t,x(t),x'(t),...,x^{n}(t)) \rightarrow  F(t,x(t),x'(t),...,x^{n}(t))$
+        \item n: es el orden de la edo. COrresponde a la derivada de mayor orden que aparece 
+        en la edo.
+    \end{enumerate}
+
+    \subsection{Notación}
+
+    Usaremos las siguientes notaciones:
+
+    \begin{itemize}
+        \item x = x(t) . Aquí x es la variable dependiente y t la variable independiente.
+        Se usa en problemas dinámicos (posición, velocidad de un cuerpo,...)
+        \item y = y (x) . Aquí y es la variable dependiente y x la variable independiente.
+        Se usa en problemas de estática, geométricos,...
+    \end{itemize}
+
+    \subsection{Forma normal de una edo}
+
+    Decimos que una edo está en forma normal si está escrita en la forma
+    \begin{equation*}
+        x^{n}=f(t,x'.x'',...,x^{n-1})
+    \end{equation*}
+    donde $f:I \times R^{n} \rightarrow R$, es decir la derivada de orden más alto aparece
+    despejada en la ecuación.
+
+    \subsection{Solución de una edo de orden 1}
+    Consideremos una edo de orden 1 en forma normal, es decir
+    \begin{equation*}
+        x'f(t,x)
+    \end{equation*}
+    donde f está definida en un subconjunto D de R 2 , que llamaremos
+    dominio de la ecuación. Además f : D → R se supondrá siempre
+    continua.
+    Una solución de esta edo es una función x = x(t) derivable en un
+    intervalo abierto I y satisface que
+    \begin{equation*}
+        x'(t)=f(t,x(t))
+    \end{equation*}
+    esto es, al sustituir la función solución y su derivada en la edo resulta una
+    identidad.
+    \newpage
+
+    \textbf{EJ}: Determine si la función dada es solución de la edo
+
+    \begin{enumerate}
+        \item $x''= x +e^{2t}$
+            \begin{itemize}
+                \item  $x_{1}(t)=\frac{1}{3}e^{2t}$\\
+                Veamos ahora su derivada\\
+                $\rightarrow x'=\frac{1}{3}(e^{2t})' \rightarrow x'=\frac{1}{3}e^{2t}(2t)' \rightarrow x'=\frac{1}{3}e^{2t}2
+                \rightarrow x'=\frac{2}{3}e^{2t}$\\
+                Veamos ahora su segunda derivada\\
+                $\rightarrow x''=\frac{2}{3}(e^{2t})' \rightarrow x''=\frac{2}{3}e^{2t}(2t)' \rightarrow x''=\frac{2}{3}e^{2t}2
+                \rightarrow x''=\frac{4}{3}e^{2t}$\\ 
+                Ahora remplazamos\\
+                $\frac{4}{3}e^{2t}= \frac{1}{3}e^{2t} +e^{2t} \rightarrow \frac{4}{3}e^{2t} =  \frac{1}{3}e^{2t} + \frac{3}{3}e^{2t} 
+                \rightarrow \frac{4}{3}e^{2t} = \frac{4}{3}e^{2t}$
+                \\ por tanto $x_{1}(t)=\frac{1}{3}e^{2t}$ es solución de la edo :)
+                
+                \item $x_{2}(t)=\frac{1}{2}e^{2t}$
+                Veamos ahora su derivada\\
+                $x'=\frac{1}{2}e^{2t}2 \rightarrow x'=e^{2t}$
+                Veamos ahora su segunda derivada\\
+                $x''= 2e^{2t}$\\ 
+                Ahora remplazamos\\
+                $2e^{2t}= \frac{1}{2}e^{2t} + e^{2t} \rightarrow 2e^{2t} =  \frac{3}{2}e^{2t} \rightarrow 4e^{2t} - 3e^{2t} =0
+                \rightarrow e^{2t} \not = 0$\\ para cualquier valor de t, (pues la función exponencial es siempre positiva) 
+                por tanto $x_{2}(t)=\frac{1}{2}e^{2t}$ no es solución de la edo :(
+            \end{itemize}
+       
+
+        
+
+        \item $x'=2tx\\  x(t)=e^{t^{2}}$\\ 
+        Veamos ahora su derivada\\
+        $x'=2e^{2t}$\\
+        Ahora remplazamos\\
+        $2e^{2t}= 2t(e^{t^{2}}) \rightarrow 2e^{2t}= 2e^{t^{2}}t \rightarrow t = 0$\\
+        por ende $x(t)=e^{t^{2}}$ es soloucion de la edo cuando t = 0. 
+        
+        \item $x'=-\frac{t}{x}$
+            \begin{itemize}
+                \item $x_{1}(t)=\sqrt{4-t^{2}}$\\ Veamos ahora su derivada\\
+                $x'=((4-t^{2})^{\frac{1}{2}})' \rightarrow x'= \frac{1}{2}(4-t^{2})^{-1/2}(4-t^{2})' \rightarrow -\frac{2t}{2\sqrt{4-t^{2}}}
+                \rightarrow x'= -\frac{t}{\sqrt{4-t^{2}}} $ \\
+                Ahora remplazamos\\
+                $-\frac{t}{\sqrt{4-t^{2}}} = -\frac{t}{\sqrt{4-t^{2}}} $\\
+                por tanto $x_{1}(t)=\sqrt{4-t^{2}}$ es solución de la edo.
+                
+                \item $x_{2}(t)=-\sqrt{4-t^{2}}$ \\ vemos ahora su derivada \\
+                $x'=\frac{t}{\sqrt{4-t^{2}}}$\\Ahora remplazamos\\
+                $\frac{t}{\sqrt{4-t^{2}}} \not = -\frac{t}{-\sqrt{4-t^{2}}} \rightarrow \frac{t}{\sqrt{4-t^{2}}} = \frac{t}{\sqrt{4-t^{2}}}$
+                \\ por tanto $x_{2}(t)=-\sqrt{4-t^{2}}$ es solución de la edo.
+            \end{itemize}
+        
+
+
+
+        
+
+    \end{enumerate}
 \end{document}
