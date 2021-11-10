@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsthm,amsfonts,amssymb}%paquetes AMS
+
+%comienza por los titulos
+%Entrada o introducción al tema de forma enganchante 
+%cuerpo del blog fácil de esacnear
+%Citas con hipervínvulos y referencias para aumentar tu credibilidad 
+%conclusión
+%CTA... 
+
+\begin{document}
+
+\begin{center}
+    \textbf{¿como nacen las formulas en las matemáticas?}
+\end{center}
+En el colegio e incluso en la universidad, nos enseñan a memorizar ciertas formulas de las matemáticas y algoritmos tales como:
+
+    \begin{equation*}
+        \frac{a}{b}+\frac{c}{d}=\frac{a \cdot d + b \cdot c}{b \cdot d}
+    \end{equation*}
+
+Pero, sabes el ¿por que? ¿por que esto es verdad?, bueno en la matemáticas a las verdades absolutas
+es decir algo que siempre es verdad pasé lo que pase lo llamamos teoremas y concluimos que son verdaderas 
+siempre que exista una Demostración. Una Demostración es una serie de pasos que nos permite concluir 
+que cierta proposición es verdadera.
+\\
+\\ 
+Ahora bien \textbf{¿Como hacemos para Demostrar el Teorema aqui expuesto?} bien en matemática existe 
+algo llamado \textbf{Axiomas de campo}, calma por definición un axioma es una proposición o enunciado tan evidente que se considera que no requiere demostración.
+y un cuerpo es simplemente un  sistema algebraico en donde existe la multiplicación y la adicción.
+un ejemplo seria los naturales $\{0,1,2,3,4...\}$ pues sus elementos se pueden sumar y multiplicar entre si.
+\\
+\\ 
+explicado lo anterior vamos a enunciar los axiomas de campo:
+\begin{enumerate}
+    \item Para todo a,b que pertenecen a $\mathbb R$ (los reales de toda la vida) se tiene: 
+    $a + b = b + a$, y $a \cdot b = b \cdot a$.
+    \item para todo a,b,c en $\mathbb R$ $(a+b)+c = c+(a+b)$ y $a \cdot (b \cdot c)= (a \cdot b) \cdot c$
+    \item Para todo a,b,c en  $\mathbb R$ $(a + b) \cdot c = a \cdot c + b \cdot c $
+    \item existen elementos 0 y 1 en $\mathbb{R}$ tales que $0 \not = 1$ y para cualquier a en $\mathbb R$ se cumple que 
+    $x + 0 = 0 + x = x$ y $x \cdot 1 = 1 \cdot x = x.$
+    \item para cualquier a en $\mathbb R$ existe un -a, talque $a+(-a)=0$
+    \item para cualquier a en $\mathbb R$ con existe un $\frac{1}{a}$ talque $a \cdot \frac{1}{a} = 1$ con $ a \not = 0$ 
+    recordemos que a no puede ser igual a 0, por que si a = 0 entonces $\frac{1}{a}$ dadaria indeterminado,es decir su resultado es desconocido.
+\end{enumerate}
+bueno sin mas vueltas al asunto enunciemos formalmete y Demostremos el teorema expuesto al principio de este blog \\ \\ 
+\textbf{Teorema}: si a,b,c,d estan en $\mathbb R$, con $b \not = 0$ y $d \not = 0$ entonces $\frac{a}{b}+\frac{c}{d}=\frac{a \cdot d + b \cdot c}{b \cdot d}$
+\\ \\
+\textbf{Demostración} es claro que $b \cdot d \not = 0$ puesto que $b \not = 0$ y $d \not = 0$.
+\\ \\ 
+Vamos a comenzar del lado izquierdo de la ecuación y trataremos de llegar al lado derecho es decir de $\frac{a}{b}+\frac{c}{d}$
+llegaremos a $\frac{a \cdot d + b \cdot c}{b \cdot d}$
+\\ \\
+Tenemos que $\frac{a}{b}+\frac{c}{d}= \frac{a}{b}+\frac{c}{d} \cdot 1$ esto por el axioma 4.
+\\ \\
+y tenemos que $1 = b \cdot d \cdot \frac{1}{b \cdot d}$ esto por axioma 6. por ende remplazando el 1 en el paso anterior tenemos
+$\frac{a}{b}+\frac{c}{d}= \frac{a}{b}+\frac{c}{d} \cdot (b \cdot d \cdot \frac{1}{b \cdot d}) $ 
+\\ \\ 
+Ahora por el axioma 2 podemos hacer $(\frac{a}{b}+\frac{c}{d} \cdot b \cdot d )\cdot \frac{1}{b \cdot d}$
+\\ \\ 
+por el axioma 3 podemos $(\frac{a}{b}\cdot b \cdot d + \frac{c}{d} \cdot b \cdot d) \cdot \frac{1}{b \cdot d}$
+\\ \\ 
+Ahora bien supongamos el siguiente \textbf{Lema} un Lema en matemáticas es un teorema que se usa en una demostración sin 
+demostrar. Pues en matemáticas no podemos asumir nada que no haya sido demostrado o que no sea un axioma.
+\\ \\ 
+\textbf{Lema} $\frac{a}{b}\cdot b \cdot d = a \cdot d $  y $\frac{c}{d} \cdot b \cdot d = c \cdot d$ para cualesquiera a,b,c,d en $\mathbb R$
+con $b \not = 0$ y $d \not = 0$. (un consejo para demostrar este lema sera usando los axiomas 2,1, 6 y 4)
+\\ \\ Por lo tanto tenemos que $(a \cdot d + c \cdot b) \cdot \frac{1}{b \cdot d}$ y listo simplemente organizando tenemos que $\frac{(a \cdot d + c \cdot b)}{b \cdot d} $
+y concluimos que $\frac{a}{b}+\frac{c}{d}=\frac{a \cdot d + b \cdot c}{b \cdot d}$ que es lo que queriamos Demostrar.
+\\ \\ 
+\begin{center}
+    \textbf{conclusiónes}
+\end{center}
+\begin{enumerate}
+    \item todo lo que sea verdad en matemáticas o bien es un axioma o se demuestra a partir de axiomas. 
+    prodiamos decir que un axioma es como una semilla de un arbol, es algo pequeño pero apartir de ella nace toda el hermoso arbol de las matemáticas.
+    \item Si piensas que las matemáticas no son para ti o que no te gustan o que simplemente no se te dan, talvez sea la forma como te enseñaron
+    las matemáticas. las matemáticas pueden ser mucho mas didacticas y divertidad de lo que pueden aparentar a simple vista, solo basta con mirarlas diferente
+\end{enumerate}
+por ultimo quiero dejarte dos retos el primero es que demuestres el lema utilizado en la Demostración y el otro es que nunca pares de aprender. 
+si tienes dudas escribeme un comentario en este blog o escribeme a mi twitter @WilsonJerez estare feliz de resolver tus dudas.
+
+\end{document}
