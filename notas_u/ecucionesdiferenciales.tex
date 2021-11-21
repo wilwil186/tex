@@ -213,4 +213,24 @@
         \item $a = 0\to x'=0$
         \item $a = 2\to x'=2$
     \end{itemize}
+    \section{Teorema de existencia y unicidad de soluciones}
+    $\frac{dx}{dt} = f(t,x)$, $x(a)=b$
+    \begin{itemize}
+        \item $f(t,x)$ continua en algún rectángulo que contiene (a,b), \textbf{existe solución}
+        \item $\frac{\partial f }{\partial x}$ continua en ese rectángulo \textbf{Es única solución}
+    \end{itemize}
+    \textbf{Ejercicio:} Establecer si el P.V.I dado tiene solución unica: \\ 
+    1. $x'= \frac{x}{t} $ \\ $x(0)=0$ \\ \textbf{¿f es continua es (0,0)?} No. Luego, no es posible encontrar un intervalo centrado en (0,0)
+    donde f sea continua. \\ 
+    por el teroema de existencia y unicidad no garantiza ni siquiera la existencia de soluciones al P.V.I. \\ 
+    2. $x'= \frac{x}{t} $ \\ $x(t_{0})=0, t_{0} \not = 0$ \\ 
+    Observamos que f es continua siempre que $t \not = 0$ por tanto es posible encontrar un rectángulo centrado 
+    en $(t_{0}, 0), t_{0 \not = 0 }$ \\ 
+    \includegraphics[scale=0.4]{imagenes/PVI_01.png}\\ 
+    por el T. existencia y unicidad, existe por lo menos una solución. 
+    Ahora calculamos $\frac{\partial f }{\partial x}(\frac{x}{t})= \frac{1}{t}$ y vemos que es continua para $t \not = 0$ por tanto tiene solución unica
+    \\ 
+    3.  $x'= 3x^{\frac{2}{3}} $ \\ $x(2)=0$ \\ 
+    4. $x'= 3x^{\frac{2}{3}} $ \\ $x(2)=1$ \\ 
+    
 \end{document}

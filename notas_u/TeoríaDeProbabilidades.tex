@@ -1,0 +1,52 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsthm,amsfonts,amssymb}%paquetes AMS
+
+\begin{document}
+    \chapter{Conceptos Básicos}
+    \section{Experimento aleatorio}
+    Un experimento se dice \textbf{aleatorio} si su resultado no puede ser determinado de antemano.
+    \\ 
+    \textbf{Ejemplos} \\ 
+    Son ejemplos de experimentos aleatorios. 
+    \begin{itemize}
+        \item El lanzamineto de un dado.
+        \item El lanzamineto de una moneda.
+        \item Observar el precio del dolar con respecto al precio del peso colombiano en el momento en que cierra la bolsa de valores de 
+        New York.
+        \item Observar el número de clientes que son atendidos en una hora en una sucursal bancaría.
+    \end{itemize}
+    \section{Espacio Muestral}
+    El conjunto $\Omega$ de todos los posibles resultados de un experimento aleatorio se llama \textbf{espacio muestral}.
+    Los elementos $w \in \Omega$  son llamados \textbf{puntos muestrales}. \\ 
+    \textbf{Ejemplos} \\ 
+    \begin{itemize}
+        \item En el experimento del lanzamiento de un dado corriente el espacio muestral es 
+            \begin{equation*}
+                \omega = \{ 1, 2 ,3 ,4 ,5 ,6\}
+            \end{equation*}
+        \item En el experimento del lanzamiento de una moneda corrinete. Los posibles resultados, para este 
+        experimento son : 'cara'=c y 'sello'=s, esto es 
+            \begin{equation*}
+                \omega = \{ c,s\}
+            \end{equation*}
+    \end{itemize}
+    \textbf{El espacio muestral $\Omega$ se llama discreto si es finito o enumerable}.
+    \section{$\sigma$-álgebra}
+    Sea $\Omega \not = \emptyset $.Una colección $\zeta$ de subconjuntos de $\Omega$ se llama $\sigma$-álgebra, si y solo si.
+    \begin{itemize}
+        \item $\Omega \in \zeta$
+        \item Si $A \in \zeta$, entonces $\displaystyle\bigcup_{i \in \mathbb{N}}{A_{i} \in \zeta }$
+    \end{itemize}
+    Los elementos de $\zeta$ se llaman \textbf{eventos}.
+    \section{Espacio medible}
+    Sean $\Omega \not = \emptyset $ y  $\zeta$ una $\sigma$-álgebra.La pareja 
+    $( \Omega, \zeta )$ se llama \textbf{Espacio medible}.
+    \section{Eventos mutuamente excluyentes}
+    Dos eeventos A y B se dicen mutuamente exluyentes si $A \cap B = \emptyset$ 
+\end{document}
