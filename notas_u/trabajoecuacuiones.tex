@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{stmaryrd}
+
+\begin{document}
+
+\begin{enumerate}
+    \item modelo de población logístico pag. 8 
+    \item ejercicio 18 de la seccion 1.1. Libro Ecuaciones Diferenciales (Blanchard, Devaney, Hall)
+\end{enumerate}
+\textbf{modelo de población logístico} \\
+Recursos limitados y modelo logístico de población\\
+Para ajustar el modelo de crecimiento exponencial de la población para tener en cuenta un entorno y recursos limitados, agregamos los supuestos:
+\begin{itemize}
+    \item Si la población es pequeña, la tasa de crecimiento de la población es proporcional a su tamaño.
+    \item Si la población es demasiado grande para ser sustentada por su medio ambiente y recursos, 
+    la población disminuirá. Es decir, la tasa de crecimiento es negativa.
+\end{itemize}
+Para este modelo, usamos nuevamente
+\begin{center}
+    t = tiempo (variable independiente),\\
+    P = población (variable dependiente),\\
+    k = coeficiente de tasa de crecimiento para pequeños\\
+    poblaciones (parámetro).
+\end{center}
+Sin embargo, nuestra suposición sobre recursos limitados introduce otra cantidad, 
+el tamaño de la población que corresponde a ser "demasiado grande". Esta cantidad es un segundo 
+parámetro, denotado por N, que llamamos capacidad de carga del medio ambiente. En términos de capacidad 
+de carga, 
+asumimos que $P (t)$ aumenta si $P(t) <N$. Sin embargo, si $P (t)> N$, asumimos que $P (t)$ 
+es decreciente. \\ 
+Usando esta notación, podemos restaurar nuestras suposiciones como:
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\textbf{Desarrollo ejercicio 18}\\ 
+\\ 
+Preliminares \\ 
+Ejercicio 17: \\ 
+Suponga que una especie de pez en un lago en particular tiene una población modelada por el modelo logístico de población con tasa de crecimiento k, capacidad de carga N y tiempo t medido en años. Ajuste el modelo para tener en cuenta cada una de las siguientes situaciones.
+\begin{enumerate}
+    \item Cada año se capturan cien peces.
+    \item Un tercio de la población de peces se captura anualmente.
+    \item El número de peces capturados cada año es proporcional a la raíz cuadrada del número de peces en el lago.   
+\end{enumerate}
+
+Ejercicio 18: \\ 
+Suponga que el parámetro de la tasa de crecimiento k = 0.3 y la capacidad de carga 
+N = 2500 en el modelo 
+logístico de población del ejercicio 17. Suponga que P (0) = 2500.
+\begin{enumerate}
+    \item  Si se capturan 100 peces cada año, ¿qué predice el modelo para el 
+    comportamiento a largo plazo de la población de peces? En otras palabras, 
+    ¿qué arroja un análisis cualitativo del modelo?
+    \item Si se captura un tercio de los peces cada año, ¿qué predice el modelo para 
+    el comportamiento a largo plazo de la población de peces?
+\end{enumerate}
+
+\end{document}
