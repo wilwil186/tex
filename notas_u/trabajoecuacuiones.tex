@@ -37,18 +37,45 @@ asumimos que $P (t)$ aumenta si $P(t) <N$. Sin embargo, si $P (t)> N$, asumimos 
 es decreciente. \\ 
 Usando esta notación, podemos restaurar nuestras suposiciones como:
 \begin{enumerate}
-    \item 
+    \item $\frac{dP}{dt} \approx KP $si  P es pequeño.
+    \item si $P > N$. $\frac{dP}{dt}<0$.
 \end{enumerate}
-
+También queremos que el modelo sea "algebraicamente simple", o al menos tan simple como sea posible,
+por lo que tratamos de modificar el modelo exponencial lo menos posible. Por ejemplo, podríamos buscar 
+una expresión de la forma
+\begin{equation*}
+    \frac{dP}{dt} = k
+\end{equation*}
+Queremos que el factor "algo" esté cerca de 1 si P es pequeño, pero si $P> N$
+queremos que "algo" sea negativo. La expresión más simple que tiene estas propiedades es la
+función
+\begin{center}
+    (algo)=$(1-\frac{P}{N})$
+\end{center}
+Note that this expression equals 1 if P = 0, and it is negative if $P > N$ . Thus our model is
+\begin{center}
+    $\frac{dP}{dt}=k(1-\frac{P}{N})P$
+\end{center}
+Esto se denomina modelo logístico de población con tasa de crecimiento k y capacidad de carga N. 
+Es otra ecuación diferencial de primer orden. Se dice que esta 
+ecuación no es lineal porque su lado derecho no es una función lineal de P como lo era en el modelo 
+de crecimiento exponencial.
+\\ \textbf{Análisis cualtitativo} \\ 
+Aunque la ecuación diferencial logística es un poco más complicada que el modelo de crecimiento exponencial, no hay forma de que podamos adivinar soluciones. El método de separación de variables discutido en la siguiente sección produce una fórmula para la solución de esta ecuación diferencial particular. Pero por ahora, nos basamos únicamente en métodos cualitativos para ver qué predice este modelo a largo plazo.
+\\ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 \textbf{Desarrollo ejercicio 18}\\ 
 \\ 
 Preliminares \\ 
 Ejercicio 17: \\ 
-Suponga que una especie de pez en un lago en particular tiene una población modelada por el modelo logístico de población con tasa de crecimiento k, capacidad de carga N y tiempo t medido en años. Ajuste el modelo para tener en cuenta cada una de las siguientes situaciones.
+Suponga que una especie de pez en un lago en particular tiene una población modelada por el modelo logístico 
+de población con tasa de crecimiento k, capacidad de carga N y tiempo t medido en años. 
+Ajuste el modelo para tener en cuenta cada una de las siguientes situaciones.
 \begin{enumerate}
-    \item Cada año se capturan cien peces.
-    \item Un tercio de la población de peces se captura anualmente.
-    \item El número de peces capturados cada año es proporcional a la raíz cuadrada del número de peces en el lago.   
+    \item Cada año se recolectan cien peces.
+    \item Un tercio de la población de peces se recolectan anualmente.
+    \item El número de peces que se recolectan cada año es proporcional a la raíz 
+    cuadrada del número de peces en el lago.   
 \end{enumerate}
 
 Ejercicio 18: \\ 
@@ -56,10 +83,10 @@ Suponga que el parámetro de la tasa de crecimiento k = 0.3 y la capacidad de ca
 N = 2500 en el modelo 
 logístico de población del ejercicio 17. Suponga que P (0) = 2500.
 \begin{enumerate}
-    \item  Si se capturan 100 peces cada año, ¿qué predice el modelo para el 
+    \item  Si se recolectan 100 peces cada año, ¿qué predice el modelo para el 
     comportamiento a largo plazo de la población de peces? En otras palabras, 
     ¿qué arroja un análisis cualitativo del modelo?
-    \item Si se captura un tercio de los peces cada año, ¿qué predice el modelo para 
+    \item Si se recolectan un tercio de los peces cada año, ¿qué predice el modelo para 
     el comportamiento a largo plazo de la población de peces?
 \end{enumerate}
 
