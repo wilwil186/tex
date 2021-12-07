@@ -1,0 +1,47 @@
+\section{Preliminares}
+
+\begin{frame}{Lema1}
+Para números reales $x_{1},...,x_{n}$.
+$2 \sum_{1 \leq i<j \leq m}x_{i}x_{j} + 2(\sum_{k=1}^{m} x_{k}x_{m+1}) = 2 \sum_{1 \leq i<j \leq m+1}x_{i}x_{j}$ \\ 
+\textbf{Prueba} \\ 
+$2 \sum_{1 \leq i<j \leq m}x_{i}x_{j} + 2(\sum_{k=1}^{m} x_{k}x_{m+1}) \to $
+$2((\sum_{1 \leq i<j \leq m}x_{i}x_{j}) + (\sum_{k=1}^{m} x_{k}x_{m+1}) ) \to $ \\
+$2((x_{1}x_{2}+x_{1}x_{3}+ \cdots x_{1}x_{n} + \cdots x_{2}x_{3} + \cdots) + (x_{1}x_{m+1}+x_{2}x_{m+1}+ \cdots) ) \to 2 \sum_{1 \leq i<j \leq m+1} x_{i}x_{j}$ 
+    
+\end{frame}
+\begin{frame}{Lema 2}
+Para números reales $x_{1},...,x_{n}$ y $y_{1},...,y_{n}$ \\ 
+$\sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} +  \sum_{1 \leq i < j \leq n} x^{2}_{i}y^{2}_{j}  = (\sum_{k=1}^{n} x^{2}_{k})(\sum_{k=1}^{n} y^{2}_{k})$ \\
+\textbf{Prueba} \\ 
+$\sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} +  \sum_{1 \leq i < j \leq n} x^{2}_{i}y^{2}_{j} \to$ \\
+$x^{2}_{1}y^{2}_{1}+x^{2}_{2}y^{2}_{2}+\cdots+ x^{2}_{n}y^{2}_{n}+x^{2}_{1}y^{2}_{2}+x^{2}_{2}y^{2}_{1}+\cdots x^{2}_{n-1}y^{2}_{n} =(x^{2}_{1}+x^{2}_{2}+ \cdots + x^{2}_{n})(y^{2}_{1}+y^{2}_{2}+\cdots+y^{2}_{n}) \to $ \\ 
+$(\sum_{k=1}^{n} x^{2}_{k})(\sum_{k=1}^{n} y^{2}_{k})$
+\end{frame}
+
+ 
+\begin{frame}{Teorema}
+Para números reales $x_{1},...,x_{n}$.
+\begin{equation*}
+    (\sum_{k=1}^{n} x_{k})^{2} = \sum_{k=1}^{n} x_{k}^{2} + 2 \sum_{1 \leq i<j \leq n}x_{i}x_{j} 
+\end{equation*}
+    
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}{Demostración}
+Vamos a realizar la Demostración por inducción. \\
+para n = 1 resulta trivial. \\
+\textbf{Paso base, n = 2 } \\
+$(\sum_{k=1}^{2} x_{k})^{2} = \sum_{k=1}^{2} x_{k}^{2} + 2 \sum_{1 \leq i<j \leq 2}x_{i}x_{j}$ \\ $\to (x_{1}+x_{2})^{2} = x_{1}^{2}+x_{2}^{2}+2x_{1}x_{2}$ y como $x_{1}$ y $x_{2}$ son números reales cumple con esta propiedad. \\
+\textbf{Hipotesis de inducción, n = m} \\ 
+Supongamos cierto $(\sum_{k=1}^{m} x_{k})^{2} = \sum_{k=1}^{m} x_{k}^{2} + 2 \sum_{1 \leq i<j \leq m}x_{i}x_{j}$ 
+\end{frame}
+\begin{frame}{Demostración}
+\textbf{Paso inductivo, n = m + 1} \\
+%$(\sum_{k=1}^{m+1} x_{k})^{2} = \sum_{k=1}^{m+1} x_{k}^{2} + 2 \sum_{1 \leq i<j \leq m+1}x_{i}x_{j}$ 
+Tenemos $(\sum_{k=1}^{m+1} x_{k})^{2} \to$ 
+$((\sum_{k=1}^{m} x_{k})+x_{m+1})^{2} \to$
+$ \underline{(\sum_{k=1}^{m} x_{k})^{2}}+x_{m+1}^{2}+2(\sum_{k=1}^{m} x_{k})x_{m+1}$ por \textbf{PB}, ahora utilizando la \textbf{HI}\\ 
+$ \sum_{k=1}^{m} x_{k}^{2} + 2 \sum_{1 \leq i<j \leq m}x_{i}x_{j}+x_{m+1}^{2}+2(\sum_{k=1}^{m} x_{k}x_{m+1})$ Esto ultimo por la propiedad distributiva de la suma respecto al producto, ahora conmutando y agrupando dentro de la sumatoria $\sum_{k=1}^{m+1} x_{k}^{2} + 2 \sum_{1 \leq i<j \leq m}x_{i}x_{j} + 2(\sum_{k=1}^{m} x_{k}x_{m+1})$ ahora por Lema 1 , $\sum_{k=1}^{m+1} x_{k}^{2} + 2 \sum_{1 \leq i<j \leq m+1}x_{i}x_{j}$\\
+\textbf{Q.E.D.}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
