@@ -3,18 +3,43 @@
 \begin{frame}{Identidad de Lagrange}
 Para números reales $x_{1},...,x_{n}$ y $y_{1},...,y_{n}$
 \begin{equation*}
-    (\sum_{k=1}^{n}x_{k}y_{k})^{2} = (\sum_{k=1}^{n} x^{2}_{k})(\sum_{i=1}^{n}y^{2}_{k})-\sum_{1\leq i<j \leq n}(x_{i}y_{j}-x_{j}y_{i})^{2}
+    (\sum_{k=1}^{n}x_{k}y_{k})^{2} = (\sum_{k=1}^{n} x^{2}_{k})(\sum_{k=1}^{n}y^{2}_{k})-\sum_{1\leq i<j \leq n}(x_{i}y_{j}-x_{j}y_{i})^{2}
 \end{equation*}
     
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}{Demostración}
 Por teorema anterior 
-\begin{equation*}
-    (\sum_{k=1}^{n}x_{k}y_{k})^{2} =  \sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} +\underline{ 2 \sum_{1 \leq i < j \leq n} x_{i}y_{j}x_{j}y_{j}}
-\end{equation*}
-Observamos $(x_{i}y_{j} - x_{j}y_{i})^{2} = x^{2}_{i}y^{2}_{j}+x^{2}_{j}y^{2}_{i}-\underline{2x_{i}y_{j}x_{j}y_{i}}$ aplicando axiomas de los reales 
-$2x_{i}y_{j}x_{j}y_{i} = x^{2}_{i}y^{2}_{j}+x^{2}_{j}y^{2}_{i} - (x_{i}y_{j} - x_{j}y_{i})^{2} \to $
-$ \sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} + \sum_{1 \leq i < j \leq n}  x^{2}_{i}y^{2}_{j}+x^{2}_{j}y^{2}_{i} - (x_{i}y_{j} - x_{j}y_{i})^{2} $ reescribiendo $\underline{ \sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} +  \sum_{1 \leq i < j \leq n} x^{2}_{i}y^{2}_{j}} -  \sum_{1 \leq i < j \leq n} (x_{i}y_{j} - x_{j}y_{i})^{2} $ utilizamos el Lema 2 $(\sum_{k=1}^{n} x^{2}_{k})(\sum_{k=1}^{n} y^{2}_{k}) -  \sum_{1 \leq i < j \leq n} (x_{i}y_{j} - x_{j}y_{i})^{2}$ \\ 
+\begin{equation}
+    (\sum_{k=1}^{n}x_{k}y_{k})^{2} =  \sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} +\underline{ \sum_{1 \leq i < j \leq n} 2 x_{i}y_{j}x_{j}y_{i}}
+\end{equation}
+
+Observamos
+\begin{equation}
+    (x_{i}y_{j} - x_{j}y_{i})^{2} = x^{2}_{i}y^{2}_{j}+x^{2}_{j}y^{2}_{i}-\underline{2x_{i}y_{j}x_{j}y_{i}}
+\end{equation}
+  
+aplicando axiomas de los reales 
+\begin{equation}
+    2x_{i}y_{j}x_{j}y_{i} = x^{2}_{i}y^{2}_{j}+x^{2}_{j}y^{2}_{i} - (x_{i}y_{j} - x_{j}y_{i})^{2} \to 
+\end{equation}
+
+\begin{equation}
+    (\sum_{k=1}^{n}x_{k}y_{k})^{2} = \sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} + \sum_{1 \leq i < j \leq n}  x^{2}_{i}y^{2}_{j}+x^{2}_{j}y^{2}_{i} - (x_{i}y_{j} - x_{j}y_{i})^{2} 
+\end{equation}
+
+\end{frame}
+\begin{frame}
+    
+reescribiendo 
+\begin{equation}
+    (\sum_{k=1}^{n}x_{k}y_{k})^{2} = \underline{ \sum_{k=1}^{n} x^{2}_{k}y^{2}_{k} +  \sum_{1 \leq i < j \leq n} x^{2}_{i}y^{2}_{j}} -  \sum_{1 \leq i < j \leq n} (x_{i}y_{j} - x_{j}y_{i})^{2} 
+\end{equation}
+
+utilizamos el Lema 2 
+\begin{equation}
+    (\sum_{k=1}^{n}x_{k}y_{k})^{2} = (\sum_{k=1}^{n} x^{2}_{k})(\sum_{k=1}^{n} y^{2}_{k}) -  \sum_{1 \leq i < j \leq n} (x_{i}y_{j} - x_{j}y_{i})^{2}
+\end{equation}
+
 \textbf{Q.E.D.}
 \end{frame}
