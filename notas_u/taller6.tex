@@ -1,0 +1,155 @@
+\documentclass[12pt]{book}
+
+\usepackage[reqno]{amsmath} % Paquete para el manejo de expresiones matemáticas [reqno], [leqno] y [fleqn]
+\usepackage{amsthm}
+\usepackage{amssymb,amsmath,latexsym} %Paquete para llamar símbolos matemáticos
+\usepackage{amsfonts}
+\usepackage[mathscr]{euscript}
+\usepackage{graphicx} %paquete para el manejo de transformaciones geométricas de imagénes
+\usepackage{color} %paquete para el manejo de color en textos.
+%\usepackage[utf8]{inputenc} %paquete para el manejo de caracteres acentuados
+\usepackage[french,spanish]{babel} %paquete que genera documentos en diferentes idiomas
+\usepackage{enumerate}
+\usepackage{multicol} % Paquete para modificar el número de columnas
+\usepackage{layout} % Paquete  para revisar los valores de 
+\usepackage{verbatim}
+\pagestyle{myheadings}  % Estilo de página
+%\pagenumbering{arabic} % Estilo de numéración
+\hoffset1cm
+\newcounter{Teorema}
+\newcommand{\Teorema}{\stepcounter{Teorema}{\bf Teorema \theTeorema.} }
+
+
+\DeclareMathOperator{\arcsec}{arcsec} % Creación de nuevos comandos en latex
+\DeclareMathOperator{\Var}{Var}
+
+\DeclareMathOperator*{\Hom}{Hom}
+
+\setcounter{MaxMatrixCols}{15}
+
+\allowdisplaybreaks % Control de cambios de página en alineaciones
+
+\decimalpoint
+
+%\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\numberwithin{equation}{section}
+%\renewcommand{\theequation}{\theparentequation\arabic{equation}}
+
+
+%% Nuevos teoremas
+
+\theoremstyle{plain}  % Requiere el paquete amsthm
+
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{Corol}[thm]{Colorario}
+\newtheorem{Prop}[thm]{Proposición}
+\newtheorem{axiom[thm]}{Axioma}
+\newtheorem{conj}{Conjetura}
+\newtheorem{Def}{Definición}[chapter]
+\newtheorem{Ej}{Ejemplo}[chapter]
+\newtheorem{notacion}[Def]{Notación}
+\newtheorem{nota}[Def]{Nota}
+
+\renewcommand{\qedsymbol}{$\heartsuit$}
+\providecommand{\abs}[1]{\lvert#1\rvert} %valor absoluto
+\providecommand{\norm}[1]{\lVert#1\rVert} %norma
+
+\begin{document}
+
+\chapter{}
+
+\noindent \textbf{{\huge CAMPOS VECTORIALES E\\
+INTEGRALES DE LÍNEA}}
+
+\section{Campos vectoriales}
+
+\begin{Def}
+{\it
+Sea $D$ una región abierta en $\mathbb{R}^{n}$. Un \textbf{Campo vectorial} en $D$ es una apliclación F que a cada punto $p \in D$ le asigna un vector $F(p) \in \mathbb{R}^{n}$, con $m>1$. Si denotamos por $\vec{x}$ el vector posición de p, entonces podemos describir el campo vectorial por la función vectorial. Las funciones $f_{i}: D \to \mathbb{R}$ se llaman \textbf{componentes} del campo F. Si las componente $f_{i}$ son derivables decimos que el campo vectorial F es derivable. 
+
+}
+\end{Def}
+{\it
+\begin{Ej}
+
+Sea $D \subseteq \mathbb{R}^{n}$ una región abierta y $f: D \to \mathbb{R}$ una función derivable. Entonces el campo  vectorial 
+
+
+\begin{align*}
+	F(\vec{x})&=\bigtriangledown f(x_{1},\cdots,x_{n}\\
+	&=(\frac{\partial f}{\partial x_{1}}(x_{1},\cdots,x_{n}),\cdots,\frac{\partial f}{\partial x_{n}})
+\end{align*}
+
+\end{Ej}
+\noindent se llama \textbf{Campo vectorial gradiente}. Los vectores del campo gradiente son ortogonales a las superficies de nivel de la función f.
+}
+\vfill
+En muchos casos para entender un campo vectorial necesitamos dibujarlo, y esto no resulta una tarea no muy corta. Podemos usar para esta tarea ciertas líneas de campo, un concepto muy importante
+\newpage
+
+
+{\it
+\begin{Def}
+Una \textbf{línea de campo} de un campo vectorial $F(\vec{x})$ es una curva $\vec{r}(t)$, tal que
+\begin{equation*}
+    \frac{d\vec{r}}{dt} = F(\vec{r}(t)).
+\end{equation*}
+\end{Def}
+Geométricamente significa que el campo vectroial F es tangente a sus líneas de campo en cada punto. 
+Analicamente, las línea de campo de un campo vectorial $F(x_{1}, \cdots, x_{n}$ con componentes $f_{1},f_{2} \cdots f_{n}$ son las soluciones del sistema de ecuaciones diferenciales 
+}
+\begin{equation*}
+\begin{cases}
+\frac{dx_{1}}{dt}(t)=f_{1}(x_{1}(t), \cdots , x_{n}(t)) \\
+\frac{dx_{2}}{dt}(t)=f_{2}(x_{1}(t), \cdots , x_{n}(t)) \\ 
+\vdots \\ 
+\frac{dx_{n}}{dt}(t) = f_{n}(x_{1}(t),\cdots , x_{n}(t)
+\end{cases}
+\end{equation*}
+
+\section{Intregales de Línea}
+{\it 
+\begin{Def}
+(Intregal de línea sobre un campo escalar). Sea $f: D \to \mathbb{R}$ una función continua, donde $D \subseteq \mathbb{R}^{n}$ es una región abierta. Y sea $\gamma$ una curva suave en $D \subseteq \mathbb{R}^{n}$ con una ecuación dada por una función vectorial $\vec{r}:[a,b] \to D$, $\vec{r} = \vec{r}(s)$, donde s es el parámetro de longitud de arco y b-a es la longitud de la curva $\gamma$. Entonces $f(\vec{r}(s))$ es una función real continua sobre el dominio $[a,b]$
+\end{Def}
+La \textbf{intregal de línea} de la función f a lo largo de la curva $\gamma$, donde $\gamma$ esta parámetrizada en términos del parámetro natura s (longitud de arco), $s\in [a,b]$, es 
+}
+\begin{equation*}
+    \int_{\gamma}fds=\int_{a}^{b}f(\vec{r(s)}ds
+\end{equation*}
+{\it
+Si tenemos una ecuación $\vec{r} = \vec{p}(t). t \in [c,d]$ de la curva dada $\gamma$, respecto a un parámetro arbitrario t al parámetro natural s aplicando la fórmula }
+\begin{equation*}
+    s = \int_{c}^{t} \norm{p'(u)}du \Rightarrow ds = \norm{p'(t)}dt
+\end{equation*}
+\newpage
+entonces la intregal de línea a lo largo de $\gamma$, de cualquier parametrización $\vec{p}(t)$ de $\gamma$, es
+\begin{equation*}
+    \int_{\gamma}fds = \int_{c}^{d} f(\vec{p}(t)) \norm{\vec{p}'(t)}dt
+\end{equation*}
+\begin{Ej}
+La intregral de línea de la función f(x,y)=xy a lo largo de la circunferencia con centro en el origen y radio $r>0$ es 
+\end{Ej}
+
+\begin{align*}
+    \int_{\gamma} f ds &= \int_{0}^{2\pi} (r \cos{t})(r \sin{t})\norm{(-r \sin{t},r \cos{t})}dt \\
+    &= \int_{0}^{2\pi} r^{3} \cos{t} \sin{t} dt \\
+    &= 0
+\end{align*}
+\begin{Def}
+(Intregal de línea sobre un campo vectorial). Sea $F: D \to \mathbb{R}^{n}$ un campo vectorial continuo, donde $D \subseteq \mathbb{R}^{n}$ una región abierta. Sea $\gamma$ una curva suave en $D$ con una ecuación dada por una ecuación vectorial $\vec{r}:[a,b] \to D$, $\vec{r}=\vec{r}(t)$. Entonces $F(\vec{r}(t))$ es una función vectorial continua sobre el dominio $[a,b]$.
+\end{Def}
+La \textbf{Intregal de línea} del campo vectorial F a lo largo de la curva $\gamma$ es 
+\begin{equation*}
+    \int_{\gamma} F \cdot d\vec{r} = \int_{a}^{b} F(\vec{r}(t)) \cdot \vec{r}'(t)dt
+\end{equation*}
+\begin{Ej}
+la intregal de línea del campo vectorial $F(x,y)=(x+y,y)$ a lo largo de la curva con parametrización $\vec{r}(t)=(\cos{t},\sin{t}), t \in [0,2\pi]$ es 
+\end{Ej}
+\begin{align*}
+\int_{\gamma} F \cdot d\vec{r} &= \int_{0}^{2\pi} (\cos{t} +\sin{t},\sin{t}) \cdot (- \sin{t}, \cos{t})dt \\
+&= \int_{0}^{2 \pi} - \sin^{2} dt \\ 
+&= \frac{1}{2} \int_{0}^{2 \pi} \cos{2t}-1dt \\ 
+&= -\pi
+\end{align*}
+\end{document}

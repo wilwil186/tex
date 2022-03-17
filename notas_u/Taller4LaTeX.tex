@@ -1,0 +1,180 @@
+\documentclass[12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{color}
+\usepackage{bbding}
+
+
+
+
+\begin{document}
+
+    Elabore un código en \LaTeX que imprima el siguiente:
+    \\ 
+    Un sistema de \textbf{ecuaciones lineales} de $m$ ecuaciones con $n$ incógnitas es 
+    un sistema de la forma: \\ 
+    \begin{equation}
+        \begin{cases}
+            a_{11}x_{1}+a_{12}x_{2}+a_{13}x_{3}+\cdots+a_{1n}x_{n} = b_{1} \\ 
+            a_{21}x_{1}+a_{22}x_{2}+a_{23}x_{2}+\cdots+a_{2n}x_{n} = b_{1} \\ 
+            a_{31}x_{1}+a_{32}x_{2}+a_{33}x_{3}+\cdots+a_{3n}x_{n} = b_{1} \\ 
+            \dotfill \\ 
+            a_{m1}x_{1}+a_{m2}x_{2}+a_{m3}x_{3}+ \cdots + a_{nm}x_{n} = b_{m}
+        \end{cases}
+    \end{equation}
+    donde $a_{ij} \in \mathbb{R}$ para cada $1 \leq i \leq m$ y $1 \leq j \leq n$ se denomina 
+    \textbf{coeficientes} y $x_{i}$ para cada $1 \leq i \leq n$ se denominan \textbf{incógnitas.} \\ 
+    
+    Una \textbf{solución} del sistema de ecuaciones (1) es una $n$-tupla $(c_{1},c_{2},c_{3},\dots,c_{n}) \in \mathbb{R}^{n}$ tal que cuando 
+    se sustituya $x_{i}$ por $c_{i}$, para cada $1 \leq i \leq n$, en cada una de las $m$ ecuaciones del sistema (1) éstas satisfacen. \\ 
+    
+    Recordenos que un sistema de ecuaciones lineales de la forma (1) tiene asociado una matriz de coeficientes:
+    \begin{equation}
+        A=
+        \begin{pmatrix}
+            a_{11} & a_{12} & a_{13} & \cdots & a_{1n}  \\
+            a_{21} & a_{22} & a_{23} & \cdots & a_{2n}  \\ 
+            a_{31} & a_{32} & a_{33} & \cdots & a_{3n}  \\ 
+            \hdotsfor{5} \\
+            a_{m1} & a_{m2} & a_{m3} & \cdots & a_{mn}  \\  
+        \end{pmatrix}
+    \end{equation}
+    y una matriz aumentada 
+    \begin{equation}
+        (A|b) =
+        \left(
+        \begin{array}{rrrrr|r} 
+            a_{11} & a_{12} & a_{13} & \cdots & a_{1n} & b_{1} \\
+            a_{21} & a_{22} & a_{23} & \cdots & a_{2n} & b_{2}\\ 
+            a_{31} & a_{32} & a_{33} & \cdots & a_{3n} & b_{3} \\ 
+            \hdotsfor{6} \\
+            a_{m1} & a_{m2} & a_{m3} & \cdots & a_{mn} & b_{m} 
+        \end{array} \right )
+    \end{equation}
+    Ésta última se puede usar para resolver el sistema de equaciones (1) por 
+    medio de las operaciones elementales sobre filas: \\
+    
+    \begin{enumerate}
+        \item Intercambio de filas. Cuando se aplica esta operación se denota por: 
+        $F_{i} \leftrightarrows F_{j}$.
+        
+        \item Multiplicar una fila por un número real diferente de cero. 
+        Esta operación se denota por $F_{i}  \to \alpha F_{i}$
+        \item Sumar a una fila un múltiplo escalar de otra. En el moemento en el que se aplica 
+        esta operación se suele denotar por $F_{j} \to F_{j} + \alpha F_{i}$
+    \end{enumerate}
+    La idea para resolver el sistema (1) es aplicar las operaciones elementales sobre filas a la matriz 
+    (3) para obtener un sistema más sencillo de resolver y que tenga exactamente las mismas soluciones que el original. La 
+    idea general de como hacer esto consiste en en llevar a la matriz aumentada a una matriz
+    con las siguientes caracterísiticas:
+    \begin{itemize}
+        \item Las filas nulas aparacen al final de la matriz.
+        \item Si $F_{i}$ y $F_{j}$ son filas no nulas con $i < j$, entonces el primer cero de $F_{i}$ se
+        encuentra más hacia la izquierda que el primer cero de $F_{j}$.
+    \end{itemize}
+    a una matriz de este tipo se le llama \textbf{matriz escalonada}, además, a primer elemento no nulo de una fila no nula de esta matriz se le llama una \textbf{posición pivote} de la matriz.
+    \\ 
+    En general, se puede reconocer si un sistema de ecuaciones tiene única solución, infininitas soluciones y no tiene soluciones contando el número de sus posiciones pivote de su matriz de coeficientes y aumentada, y comparandola con el número de sus filas. De hecho:
+    \begin{itemize}
+        \item \textbf{Un sistema de ecuaciones no tiene solución} si el número de posiciones pivote de su matriz de coeficientes es estrictamente menor que el número de posiciones pivote de su matriz aumentada. En este caso se dice que el sistema es \textbf{inconsistente}.
+        \item \textbf{Un sistema de ecuaciones tiene por lo menos una solución} si el número de posiciones pivote de la matriz de coeficientes es igual al número de posiciones pivote de la matriz aumentada. En este caso se dice que el sistema se dice \textbf{consistente} y ocurre:
+        \begin{itemize}
+            \item El sistema tenga infintias soluciones si el número de pivotes es menor que el número de columnas de la matriz de coeficientes.
+            \item El sistema tiene única solución si el número de posiciones pivote es igual al numero de columnas de la matriz de coeficientes
+        \end{itemize}
+    \end{itemize}
+    
+    Cuando un sistema de ecuaciones lineales tiene infinitas soluciones, entonces sus matriz aumentada deber ser llevada a la escalonada reducida,
+    es decir, llevar a una matriz que sea escalonada y que además que el único
+    elemento no nulo de una columna que tenga una pocisión pivote, sea la po
+    sición pivote. Todo esto para expresar las infinitas soluciones del sistema en forma vectorial. \\ 
+    
+    Por otro lado si el sistema tiene única solución, esta se puede encontrar
+    solucionando el sistema trriangular equivalentre al sistema por sustitución
+    regresiva, como se muestra en el siguiente ejemplo. \\ 
+    
+    \textbf{Ejemplo} Resolver el siguiente sistema de ecuaciones lineales, aplicando la metodología descrita anteriormente
+    \begin{equation*}
+        \begin{cases}
+        x_{1}+2x_{2}+x_{3}+4x_{4}=13 \\
+        2x_{1}+0x_{2}+4x_{3}+3x_{4} =28 \\
+        4x_{1}+2x_{2}+2x_{3}+x_{4}=20\\ 
+        -3x_{1}+x_{2}+3x_{3}+2x_{4} = 6
+        \end{cases}
+    \end{equation*}
+    La matriz ampliada del sistema es:
+    \begin{equation*}
+        \begin{pmatrix}
+            1 & 2 & 1 & 4 |13 \\ 
+            2 & 0 & 4 & 3 |28 \\ 
+            4 & 2 & 2 & 1 |20 \\ 
+            -3 & 1 & 3 & 2 |6 
+        \end{pmatrix}
+    \end{equation*}
+    Claramente la primera posición pivote es 11 usamos los multiplicadores $m_{21}=2$, $m_{31}=4$ y $m_{41}= -3$ para eliminar los elementos que estan en la columna de la primera posición privote y debajo de ésta. Así:
+    \begin{equation*}
+    \left(
+        \begin{array}{rrrr|r}
+            1 & 2 & 1 & 4 & 13 \\ 
+            2 & 0 & 4 & 3 & 28 \\ 
+            4 & 2 & 2 & 1 & 20 \\ 
+            -3 & 1 & 3 & 2 & 6 
+        \end{array} \right)
+        \xrightarrow[\substack{F_3 \to F_3-4F_1 \\ F_4 \to F_4+3F_1}]{F_{2} \to F_{2} -2F_{1}}
+    \left(
+        \begin{array}{rrrr|r}
+             1 & 2 & 1 & 4 & 13 \\ 
+            0 & -4 & 2 & -5 & 2 \\ 
+            0 & -6 & -2 & -15 & 32 \\ 
+            0 & 7 & 6 & 14 & 45 
+        \end{array} \right)
+    \end{equation*}
+    De esta manera, encontramos la segunda posición pivote, 22, con la cual Encontramos los múltiplos $m_{23} = 3/2$ y $m_{24}=-7/4$, para continuar con la reducción de la matriz
+    \begin{equation*}
+    \left(
+        \begin{array}{rrrr|r}
+            1 & 2 & 1 & 4 & 13 \\ 
+            0 & -4 & 2 & -5 & 2 \\ 
+            0 & -6 & -2 & -15 & -32 \\ 
+            0 & 7 & 6 & 14 & 45 
+        \end{array} \right)
+        \xrightarrow[\substack{F_{3} \to F_{3}-\frac{3}{2}F_{2} \\ F_4 \to F_4+3F_1}]{F_{4} \to F_{4} +2\frac{7}{4}F_{2}}
+    \left(
+        \begin{array}{rrrr|r}
+            1 & 2 & 1 & 4 & 13 \\ 
+            0 & -4 & 2 & -5 & 2 \\ 
+            0 & 0 & -5 & \frac{-15}{2} & -35 \\ 
+            0 & 0 & \frac{19}{2} & \frac{21}{4} & \frac{97}{2}
+        \end{array} \right)
+    \end{equation*}
+    La Tercera posición pivote de nuestra matriz es 33 y con esta encontramos el múltiplo $m_{43}=-19/20$, el cual usuamos para reducir el sistema a un sistema triangular superior con única solución
+    \begin{equation*}
+    \left(
+        \begin{array}{rrrr|r}
+            1 & 2 & 1 & 4 & 13 \\ 
+            0 & -4 & 2 & -5 & 2 \\ 
+            0 & 0 & -5 & \frac{-15}{2} & -35 \\ 
+            0 & 0 & \frac{19}{2} & \frac{21}{4} & \frac{97}{2}
+        \end{array} \right)
+        \xrightarrow[\substack{}]{F_{4} \to F_{4} +\frac{19}{10}F_{3}}
+    \left(
+        \begin{array}{rrrr|r}
+            1 & 2 & 1 & 4 & 13 \\ 
+            0 & -4 & 2 & -5 & 2 \\ 
+            0 & 0 & -5 & \frac{-15}{2} & -35 \\ 
+            0 & 0 & 0 & -9 & -18
+        \end{array} \right)
+    \end{equation*}
+    Finalmente usando el algortimo de sustitución regresiva obtenemos 
+    \begin{center}
+        $x_{4}=2$, \vspace{2pt} $x_{3}=4$, \vspace{2pt} $x_{2}=-1$, \vspace{2pt} $x_{1}=3$.
+    \end{center}
+\end{document}

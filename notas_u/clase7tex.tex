@@ -1,0 +1,294 @@
+\documentclass[12pt]{book}
+
+\usepackage[leqno]{amsmath} % Paquete para el manejo de expresiones matemáticas
+\usepackage{amssymb,amsmath,latexsym} %Paquete para llamar símbolos matemáticos
+\usepackage[mathscr]{euscript}
+\usepackage{graphicx} %paquete para el manejo de transformaciones geométricas de imagénes
+\usepackage{color} %paquete para el manejo de color en textos.
+%\usepackage[utf8]{inputenc} %paquete para el manejo de caracteres acentuados
+\usepackage[french,spanish]{babel} %paquete que genera documentos en diferentes idiomas
+\usepackage{enumerate}
+\usepackage{multicol} % Paquete para modificar el número de columnas
+\usepackage{layout} % Paquete  para revisar los valores de 
+\usepackage{verbatim}
+\pagestyle{myheadings}  % Estilo de página
+%\pagenumbering{arabic} % Estilo de numéración
+\hoffset1cm
+\newcounter{Teorema}
+\newcommand{\Teorema}{\stepcounter{Teorema}{\bf Teorema \theTeorema.} }
+
+
+\DeclareMathOperator{\arcsec}{arcsec} % Creación de nuevos comandos en latex
+\DeclareMathOperator{\Var}{Var}
+
+\DeclareMathOperator*{\Hom}{Hom}
+
+\newcommand{\tto}{\longrightarrow}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\parcial}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\Norma}[1]{\Vert#1\Vert}
+\newcommand{\upla}[2]{(#1_1,#1_2,$\ldots$,#1_{#2})}
+	\newcommand{\uplamatrix}[3]{
+	\begin{pmatrix}  
+		#1_{11} &  #1_{12}  & \cdots  &  #1_{1 #3} \\   
+		#1_{21} &  #1_{22} &  \cdots  & #1_{2 #3}  \\ 
+		\vdots     &  \vdots      & \vdots  & \vdots \\
+	#1_{#2 1} & #1_{#2 2} &  \cdots &  #1_{#2 #3}
+\end{pmatrix}}
+	\newcommand{\kupla}[3][k]{
+	(#2_{#3},$\ldots$ #2_{#1})	
+}
+
+
+\setcounter{MaxMatrixCols}{15}
+
+\decimalpoint
+\begin{document}
+\makeatletter	
+\def\@roman#1{\romannumeral#1}
+\makeatother
+%\layout	% Muestra las medidas de las márgenes usadas en el documento.
+\renewcommand{\baselinestretch}{1.5}% Controlar la distancia de espaciamiento entre renglones
+\renewcommand{\thefootnote}{\arabic{footnote}} % Para hacer que Latex use diferentes simbolos para enumerar los píes de página.
+\renewcommand{\refname}{Referencias bibliográficas}
+
+
+
+
+\noindent\textbf{Definición de nuevos comandos}
+
+\begin{verbatim}
+	\newcommand{\nombre}{definición}
+\end{verbatim}
+\begin{verbatim}
+	\newcommand{\tto}{\longrightarrow}
+\end{verbatim}
+\begin{verbatim}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\end{verbatim}
+
+
+$f:A\tto B$\\
+
+\N\\
+
+
+\vspace{1.5cm}
+\noindent\textbf{Comandos con argumentos obligatorios}
+
+\begin{verbatim}
+	\newcommand{\nombre}[n]{definición}
+\end{verbatim}
+
+$\frac{\partial f}{\partial x}$
+
+\begin{verbatim}
+	\newcommand{\parcial}[2]{\frac{\partial#1}{\partial#2}}
+\end{verbatim}
+
+$\parcial{f}{x}$\\
+
+$\parcial{z}{x_i}$
+
+\begin{verbatim}
+	\newcommand{\Norma}[1]{\Vert#1\Vert}
+\end{verbatim}
+ 
+$\Norma{u}$\\
+
+$\Norma{u+v}$
+
+\begin{verbatim}
+	\newcommand{\upla}[2]{(#1_1,#1_2,$\ldots$,#1_{#2})}
+\end{verbatim}
+
+$\upla{a}{n}$ \\
+
+$\upla{c}{m}$
+
+
+\begin{verbatim}
+	\newcommand{\uplamatrix}[3]{
+	\begin{pmatrix}  
+		#1_{11} &  #1_{12}  & \cdots  &  #1_{1 #3} \\   
+		#1_{21} &  #1_{22} &  \cdots  & #1_{2 #3}  \\ 
+		\vdots     &  \vdots      & \vdots  & \vdots \\
+		#1_{#2 1} & #1_{#2 2} &  \cdots &  #1_{#2 #3}
+\end{pmatrix}}
+\end{verbatim}
+
+
+$\uplamatrix{a}{m}{n}$\\
+
+$\uplamatrix{c}{k}{p}$\\
+
+\vspace{1.5cm}
+
+\noindent\textbf{Comandos con argumentos opcionales}
+
+\begin{verbatim}
+	\newcommand{\nombre}[n][defecto]{definición}
+\end{verbatim}
+
+
+\begin{verbatim}
+	\newcommand{\kupla}[3][k]{
+(#2_{#3},$\ldots$ #2_{#1})	
+}
+\end{verbatim}
+
+
+$\kupla{a}{m}$
+
+$\kupla{a}{1}$
+
+$\kupla[p]{a}{1}$
+
+
+$\kupla[10]{a}{1}$
+
+\vspace{1.5cm}
+
+\noindent\textbf{Alineación y enumeración de fórmulas}
+
+
+\begin{equation}
+	f^{\prime}(x):=\lim\limits_{h\to 0}\frac{f(x+h)-f(x)}{x}
+\end{equation}
+
+\vspace{1.5cm}
+
+\noindent\textbf{División de fórmulas con} \verb*|multline|
+
+\begin{multline}
+	\parcial {f}{u}(a,y)=\lim\limits_{h\tto 0}\frac{f(x+h a,y+hb)-f(x,y)}{h}=\\
+	\lim\limits_{h\tto 0}\frac{f(x,y)-f(x,y+bh)}{h}+\frac{f(x+ah,y)-f(x,y)}{h}\\
+	=a\parcial{f}{x}(x,y)+b\parcial{f}{y}(x,y)=\nabla f(x,y)\cdot (a,b)
+\end{multline}
+
+\begin{multline*}
+	\parcial {f}{u}(a,y)=\lim\limits_{h\tto 0}\frac{f(x+h a,y+hb)-f(x,y)}{h}=\\
+	\lim\limits_{h\tto 0}\frac{f(x,y)-f(x,y+bh)}{h}+\frac{f(x+ah,y)-f(x,y)}{h}\\
+	=a\parcial{f}{x}(x,y)+b\parcial{f}{y}(x,y)=\nabla f(x,y)\cdot (a,b)
+\end{multline*}
+
+
+
+\noindent\textbf{Alineación con } \verb*|gather|
+
+\begin{gather}
+	A\cup B:=\{x\mid x\in A \text{ o } x\in B\}\\
+	A\cap B:=\{x\mid x\in A \text{ y } x\in B\} \\
+		A\setminus B:=\{x\mid x\in A \text{ y } x\notin B\}\\
+	A^{c}:=\{x\mid x\notin A \} \\
+		A\bigtriangleup  B:=A\setminus B\cup B\setminus A
+\end{gather}
+
+
+
+
+\begin{gather*}
+	A\cup B:=\{x\mid x\in A \text{ o } x\in B\}\\
+	A\cap B:=\{x\mid x\in A \text{ y } x\in B\} \\
+	A\setminus B:=\{x\mid x\in A \text{ y } x\notin B\}\\
+	A^{c}:=\{x\mid x\notin A \} \\
+	A\bigtriangleup  B:=A\setminus B\cup B\setminus A
+\end{gather*}
+
+
+\begin{gather}
+	A\cup B:=\{x\mid x\in A \text{ o } x\in B\}\\
+	A\cap B:=\{x\mid x\in A \text{ y } x\in B\} \\
+\notag	A\setminus B:=\{x\mid x\in A \text{ y } x\notin B\}\\ 
+\notag A^{c}:=\{x\mid x\notin A \} \\
+\notag	A\bigtriangleup  B:=A\setminus B\cup B\setminus A
+\end{gather}
+
+
+\noindent\textbf{Alineación con} \verb*|align|
+
+\begin{verbatim}
+    
+\begin{align}
+		A\cup B:=&\{x\mid x\in A \text{ o } x\in B\}\\
+	A\cap B:=&\{x\mid x\in A \text{ y } x\in B\} \\
+	A\setminus B:=&\{x\mid x\in A \text{ y } x\notin B\}\\
+	A^{c}:=&\{x\mid x\notin A \} \\
+	A\bigtriangleup  B:=&A\setminus B\cup B\setminus A
+\end{align}
+
+\end{verbatim}
+\begin{align}
+		A\cup B:=&\{x\mid x\in A \text{ o } x\in B\}\\
+	A\cap B:=&\{x\mid x\in A \text{ y } x\in B\} \\
+	A\setminus B:=&\{x\mid x\in A \text{ y } x\notin B\}\\
+	A^{c}:=&\{x\mid x\notin A \} \\
+	A\bigtriangleup  B:=&A\setminus B\cup B\setminus A
+\end{align}
+
+
+\begin{align*}
+	\Norma{u+v}^{2}&=(u+v)\cdot(u+v)\\ 
+	                                      &=u\cdot u+u\cdot v+v\cdot u+v\cdot v \\
+	                                      &=\Norma{u}^{2}+2 u\cdot v+\Norma{v}^{2}\\
+	                                      &\leq \Norma{u}^{2}+2 \Norma{u}\Norma{v}+\Norma{v}^{2}\\
+	                                      &=\left(\Norma{u}+\Norma{v}\right)^{2}
+\end{align*}
+
+
+
+\begin{align*}
+x &= ax+b & X&= uX+v & A&= aA+B\\
+x' &= ax'+b & X' &= uX'+v & A' &= aA'+B'\\
+y&= (1-a)y & Y&= (1-u)Y & B &= (1-a)B\\
+y' &= (1-b)y' & Y' &= (1-v)Y' & B' &= (1-b)B'
+\end{align*}
+
+
+\begin{align*}
+	a^{\prime}& =a^{\prime}*e    && (\text{Por la ley modulativa}) \\
+	&= a^{\prime}*(a*a^{-1})   & & (\text{Por la ley cancelativa })\\
+	&=(a^{\prime}*a)*a^{-1} & & (\text{Por la ley asociativa}) \\
+	&=e*a^{-1}  && (\text{Por la ley cancelativa})\\
+	&=a^{-1}
+\end{align*}
+
+\newpage
+
+\noindent Puesto que la igualdad
+\begin{align*}
+	(fg)^{\prime}&=f^{\prime}g+fg^{\prime}\\
+	\intertext{se puede escribir como}
+	fg^{\prime}&=(fg)^{\prime}-f^{\prime}g\\
+	\intertext{se concluye}
+	\int fg^{\prime}&=\int (fg)^{\prime}-\int f^{\prime}g
+\end{align*}
+
+
+
+
+
+\noindent\textbf{Alineación con } \verb*|split|
+
+
+\begin{equation*}
+	\begin{split}
+				A\cup B:=&\{x\mid x\in A \text{ o } x\in B\}\\
+		A\cap B:=&\{x\mid x\in A \text{ y } x\in B\} \\
+		A\setminus B:=&\{x\mid x\in A \text{ y } x\notin B\}\\
+		A^{c}:=&\{x\mid x\notin A \} \\
+		A\bigtriangleup  B:=&A\setminus B\cup B\setminus A
+	\end{split}
+\end{equation*}
+
+
+\begin{equation*}
+\begin{split}
+&\frac{f(a+h)-f(a)}h-\frac{\partial f}{\partial x}(a)=\\
+&\phantom{f(a+h)}\frac{u(a+h)-u(a)-d_au(h)}h +i\frac{v(a+h)-v(a)-
+d_av(h)}h
+\end{split}
+\end{equation*}
+
+
+\end{document}

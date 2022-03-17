@@ -1,0 +1,620 @@
+\documentclass[12pt]{book}
+
+\usepackage[reqno]{amsmath} % Paquete para el manejo de expresiones matemáticas [reqno], [leqno] y [fleqn]
+\usepackage{amsthm}
+\usepackage{amssymb,amsmath,latexsym} %Paquete para llamar símbolos matemáticos
+\usepackage[mathscr]{euscript}
+\usepackage{graphicx} %paquete para el manejo de transformaciones geométricas de imagénes
+\usepackage{color} %paquete para el manejo de color en textos.
+%\usepackage[utf8]{inputenc} %paquete para el manejo de caracteres acentuados
+\usepackage[french,spanish]{babel} %paquete que genera documentos en diferentes idiomas
+\usepackage{enumerate}
+\usepackage{multicol} % Paquete para modificar el número de columnas
+\usepackage{layout} % Paquete  para revisar los valores de 
+\usepackage{verbatim}
+\pagestyle{myheadings}  % Estilo de página
+%\pagenumbering{arabic} % Estilo de numéración
+\hoffset1cm
+\newcounter{Teorema}
+\newcommand{\Teorema}{\stepcounter{Teorema}{\bf Teorema \theTeorema.} }
+
+
+\DeclareMathOperator{\arcsec}{arcsec} % Creación de nuevos comandos en latex
+\DeclareMathOperator{\Var}{Var}
+
+\DeclareMathOperator*{\Hom}{Hom}
+
+\setcounter{MaxMatrixCols}{15}
+
+\allowdisplaybreaks % Control de cambios de página en alineaciones
+
+\decimalpoint
+
+%\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\numberwithin{equation}{section}
+%\renewcommand{\theequation}{\theparentequation\arabic{equation}}
+
+
+%% Nuevos teoremas
+
+\theoremstyle{plain}  % Requiere el paquete amsthm
+
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{Corol}[thm]{Colorario}
+\newtheorem{Prop}[thm]{Proposición}
+\newtheorem{axiom[thm]}{Axioma}
+\newtheorem{conj}{Conjetura}
+\newtheorem{Def}{Definición}[chapter]
+\newtheorem{notacion}[Def]{Notación}
+\newtheorem{nota}[Def]{Nota}
+
+\renewcommand{\qedsymbol}{$\heartsuit$}
+
+\begin{document}
+\makeatletter	
+\def\@roman#1{\romannumeral#1}
+\makeatother
+%\layout	% Muestra las medidas de las márgenes usadas en el documento.
+\renewcommand{\baselinestretch}{1.5}% Controlar la distancia de espaciamiento entre renglones
+\renewcommand{\thefootnote}{\arabic{footnote}} % Para hacer que Latex use diferentes simbolos para enumerar los píes de página.
+\renewcommand{\refname}{Referencias bibliográficas}
+\newcommand{\tto}{\longrightarrow}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\parcial}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\Norma}[1]{\Vert#1\Vert}
+\newcommand{\upla}[2]{(#1_1,#1_2,$\ldots$,#1_{#2})}
+	\newcommand{\uplamatrix}[3]{
+	\begin{pmatrix}  
+		#1_{11} &  #1_{12}  & \cdots  &  #1_{1 #3} \\   
+		#1_{21} &  #1_{22} &  \cdots  & #1_{2 #3}  \\ 
+		\vdots     &  \vdots      & \vdots  & \vdots \\
+	#1_{#2 1} & #1_{#2 2} &  \cdots &  #1_{#2 #3}
+\end{pmatrix}}
+	\newcommand{\kupla}[3][k]{
+	(#2_{#3},$\ldots$ #2_{#1})	
+}
+
+
+
+
+\noindent\textbf{Alineación con } \verb*|aligned| \textbf{y} \verb*|gathered|
+
+
+\begin{verbatim}
+	\begin{equation*}
+	\left\{
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\
+		\lambda x_1+x_2+x_3&=1-\beta\\
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+	\right.
+\end{equation*}
+\end{verbatim}
+
+	\begin{equation*}
+	\left\{
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\
+		\lambda x_1+x_2+x_3&=1-\beta\\
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+	\right.
+\end{equation*}
+
+
+\begin{verbatim}
+	\begin{equation*}
+		\left.
+		\begin{aligned}
+			x_1+x_2+\lambda x_3&=\beta\\
+			\lambda x_1+x_2+x_3&=1-\beta\\
+			x_1+\lambda x_2+x_3&=2\beta
+		\end{aligned}
+		\right\}
+	\end{equation*}
+\end{verbatim}
+
+	\begin{equation*}
+	\left.
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\
+		\lambda x_1+x_2+x_3&=1-\beta\\
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+	\right\}
+\end{equation*}
+
+
+\begin{verbatim}
+	\begin{equation*}
+		\left\{
+		\begin{aligned}
+			x_1+x_2+\lambda x_3&=\beta\\
+			\lambda x_1+x_2+x_3&=1-\beta\\
+			x_1+\lambda x_2+x_3&=2\beta
+		\end{aligned}
+		\right\}
+	\end{equation*}
+\end{verbatim}
+
+
+\begin{equation*}
+	\left\{
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\
+		\lambda x_1+x_2+x_3&=1-\beta\\
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+	\right\}
+\end{equation*}
+
+
+\begin{verbatim}
+	\begin{equation*}
+			\begin{aligned}
+			\frac{dx}{dt}+3\frac{dy}{dy}&=1\\
+			\frac{dx}{dt}-\frac{dy}{dy}&=2\\
+		\end{aligned}
+		\qquad
+		\begin{aligned}
+			x(0)&=1\\
+			y(0)&=2
+		\end{aligned}
+	\end{equation*}
+\end{verbatim}
+
+
+	\begin{equation*}
+	\begin{aligned}
+		\frac{dx}{dt}+3\frac{dy}{dy}&=1\\
+		\frac{dx}{dt}-\frac{dy}{dy}&=2\\
+	\end{aligned}
+	\qquad
+	\begin{aligned}
+		x(0)&=1\\
+		y(0)&=2
+	\end{aligned}
+\end{equation*}
+
+
+
+
+
+
+\begin{verbatim}
+	\begin{equation*}
+		\left\{
+		\begin{gathered}
+			x_1+x_2+\lambda x_3=\beta\\
+			\lambda x_1+x_2+x_3=1-\beta\\
+			x_1+\lambda x_2+x_3=2\beta
+		\end{gathered}
+		\right.
+	\end{equation*}
+\end{verbatim}
+
+\begin{equation*}
+	\left\{
+	\begin{gathered}
+		x_1+x_2+\lambda x_3=\beta\\
+		\lambda x_1+x_2+x_3=1-\beta\\
+		x_1+\lambda x_2+x_3=2\beta
+	\end{gathered}
+	\right.
+\end{equation*}
+
+
+\begin{verbatim}
+	\begin{equation*}
+		\left.
+		\begin{gahered}
+			x_1+x_2+\lambda x_3=\beta\\
+			\lambda x_1+x_2+x_3=1-\beta\\
+			x_1+\lambda x_2+x_3=2\beta
+		\end{gathered}
+		\right\}
+	\end{equation*}
+\end{verbatim}
+
+\begin{equation*}
+	\left.
+	\begin{gathered}
+		x_1+x_2+\lambda x_3=\beta\\
+		\lambda x_1+x_2+x_3=1-\beta\\
+		x_1+\lambda x_2+x_3=2\beta
+	\end{gathered}
+	\right\}
+\end{equation*}
+
+
+\begin{verbatim}
+	\begin{equation*}
+		\left\{
+		\begin{gathered}
+			x_1+x_2+\lambda x_3=\beta\\
+			\lambda x_1+x_2+x_3=1-\beta\\
+			x_1+\lambda x_2+x_3=2\beta
+		\end{gathered}
+		\right\}
+	\end{equation*}
+\end{verbatim}
+
+
+\begin{equation*}
+	\left\{
+	\begin{gathered}
+		x_1+x_2+\lambda x_3=\beta\\
+		\lambda x_1+x_2+x_3=1-\beta\\
+		x_1+\lambda x_2+x_3=2\beta
+	\end{gathered}
+	\right\}
+\end{equation*}
+
+
+\begin{verbatim}
+	\begin{equation*}
+		\begin{gathered}
+			\frac{dx}{dt}+3\frac{dy}{dy}=1\\
+			\frac{dx}{dt}-\frac{dy}{dy}=2\\
+		\end{gathered}
+		\qquad
+		\begin{gathered}
+			x(0)=1\\
+			y(0)=2
+		\end{gathered}
+	\end{equation*}
+\end{verbatim}
+
+
+\begin{equation*}
+	\begin{gathered}[t]
+		\frac{dx}{dt}+3\frac{dy}{dy}=1\\
+		\frac{dx}{dt}-\frac{dy}{dy}=2\\
+	\end{gathered}
+	\qquad
+	\begin{gathered}
+		x(0)=1\\
+		y(0)=2
+	\end{gathered}
+\end{equation*}
+
+\vspace{1.5cm}
+
+\noindent\textbf{Alineaciones con }\verb*|flalign|
+
+\begin{verbatim}
+	\begin{flalign*}
+		x&=ay+b & y&=2x+1 & x=3x-1\\
+		x&=cy+d & y&=3x-1 & x=5x-6
+	\end{flalign*}
+\end{verbatim}
+
+	\begin{flalign*}
+	x&=ay+b & y&=2x+1 & x&=3x-1\\
+	x&=cy+d & y&=3x-1 & x&=5x-6
+\end{flalign*}
+
+
+
+\begin{verbatim}
+	\begin{flalign}
+		x&=ay+b & y&=2x+1 & x=3x-1\\
+		x&=cy+d & y&=3x-1 & x=5x-6
+	\end{flalign}
+\end{verbatim}
+
+\begin{flalign}
+	x&=ay+b & y&=2x+1 & x&=3x-1\\
+	x&=cy+d & y&=3x-1 & x&=5x-6
+\end{flalign}
+
+
+\vspace{1.5cm}
+
+\noindent\textbf{ Alineación con el entorno } \verb*|eqnarray| \textbf{de} \LaTeX
+
+\noindent Se deja como ejercicio para el estudiante leer este entorno propio de \LaTeX para realizar alineaciones.
+
+\vspace{1.5cm}
+
+\noindent\textbf{espaciamiento vertical en alineaciones}
+\begin{verbatim}
+	\begin{equation*}
+			\begin{aligned}
+			x_1+x_2+\lambda x_3&=\beta\\
+			\lambda x_1+x_2+x_3&=1-\beta\\
+			x_1+\lambda x_2+x_3&=2\beta
+		\end{aligned}
+	\qquad
+				\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\[2cm]
+		\lambda x_1+x_2+x_3&=1-\beta\\[2cm]
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+	\end{equation*}
+\end{verbatim}
+
+	\begin{equation*}
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\
+		\lambda x_1+x_2+x_3&=1-\beta\\
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+	\qquad
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\[2.0cm]
+		\lambda x_1+x_2+x_3&=1-\beta\\[2.0cm]
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+\end{equation*}
+
+	\begin{equation*}
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\
+		\lambda x_1+x_2+x_3&=1-\beta\\
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+	\qquad
+	\begin{aligned}
+		x_1+x_2+\lambda x_3&=\beta\\[0.25cm]
+		\lambda x_1+x_2+x_3&=1-\beta\\[0.25cm]
+		x_1+\lambda x_2+x_3&=2\beta
+	\end{aligned}
+\end{equation*}
+
+\noindent\textbf{Control sobre cambios de página en alineaciones}
+
+
+\begin{align*}
+			x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\			x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\			x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\			x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\			x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\			x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\			x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta \\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta\\
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta
+\end{align*}
+
+\chapter{Opciones para la enumeración de fórmulas}
+
+\section{Colocación y enumeración de fórmulas}
+
+\begin{align}
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta
+\end{align}
+
+
+\section{Jerarquía de la enumeración}
+
+\subsection{Prueba de enumeración}
+
+\begin{align}
+				x_1+x_2+\lambda x_3&=\beta\\
+	\lambda x_1+x_2+x_3&=1-\beta\\
+	x_1+\lambda x_2+x_3&=2\beta
+\end{align}
+
+\section{Numeración forzada}
+
+\begin{align*}
+				x_1+x_2+\lambda x_3&=\beta \tag*{(*)}\\
+	\lambda x_1+x_2+x_3&=1-\beta \tag*{(**)}\\
+	x_1+\lambda x_2+x_3&=2\beta  \tag*{(***)}
+\end{align*}
+
+\begin{align}
+	x_1+x_2+\lambda x_3&=\beta \tag*{(*)}\\
+	\lambda x_1+x_2+x_3&=1-\beta \tag*{(**)}\\
+	x_1+\lambda x_2+x_3&=2\beta  \tag*{(***)}
+\end{align}
+
+\begin{align}
+	x_1+x_2+\lambda x_3&=\beta \\
+	\lambda x_1+x_2+x_3&=1-\beta \\
+	x_1+\lambda x_2+x_3&=2\beta 
+\end{align}
+
+\section{Numeración subordinada}
+
+\begin{subequations}\label{operaciones}
+\begin{align}
+A+B &:= \{x+y \mid x\in A,\ y\in B\} \label{suma}\\
+AB &:= \{xy \mid x\in A,\ y\in B\} \label{producto}\\
+-A &:= \{-x \mid x\in A\} \label{opuesto}\\
+A~{-1} &:= \{a~{-1} \mid a\in A,\ a\ne O\} \label{inverso}
+\end{align}
+\end{subequations}
+En (\ref{operaciones}) aparecen las definiciones de nuevos
+conjuntos de números reales: (\ref{suma}) define la suma de
+subconjuntos, (\ref{producto}) el producto, (\ref{opuesto}) el
+opuesto y (\ref{inverso}) el inverso.
+
+\section{Referencias cruzadas}
+
+\begin{verbatim*}
+	\begin{subequations}\label{operaciones1}
+		\begin{align}
+			A+B &:= \{x+y \mid x\in A,\ y\in B\} \label{suma1}\\
+			AB &:= \{xy \mid x\in A,\ y\in B\} \label{producto1}\\
+			-A &:= \{-x \mid x\in A\} \label{opuesto1}\\
+			A~{-1} &:= \{a~{-1} \mid a\in A,\ a\ne O\} \label{inverso1}
+		\end{align}
+	\end{subequations}
+	En \eqref{operaciones1} aparecen las definiciones de nuevos
+	conjuntos de números reales: \eqref{suma1} define la suma de
+	subconjuntos, \eqref{producto} el producto, \eqref{opuesto1} el
+	opuesto y \eqref{inverso1} el inverso.
+\end{verbatim*}
+
+\begin{subequations}\label{operaciones1}
+	\begin{align}
+		A+B &:= \{x+y \mid x\in A,\ y\in B\} \label{suma1}\\
+		AB &:= \{xy \mid x\in A,\ y\in B\} \label{producto1}\\
+		-A &:= \{-x \mid x\in A\} \label{opuesto1}\\
+		A~{-1} &:= \{a~{-1} \mid a\in A,\ a\ne O\} \label{inverso1}
+	\end{align}
+\end{subequations}
+En \eqref{operaciones1} aparecen las definiciones de nuevos
+conjuntos de números reales: \eqref{suma1} define la suma de
+subconjuntos, \eqref{producto} el producto, \eqref{opuesto1} el
+opuesto y \eqref{inverso1} el inverso.
+
+\section{Ajustes en la posición de los números}
+
+\begin{verbatim*}
+	\begin{align}
+		\parcial{f}{u}(\overrightarrow{x})&=\nabla f(\overrightarrow{x})\cdot u \\ 
+		&=\parcial{f}{x_1}(x_1,\ldots,x_n)u_1+\parcial{f}{x_2}(x_1,\ldots,x_n)u_2+\cdots+\parcial{f}{x_n}(x_1,\ldots,x_n)u_n \raisetag{-0.1cm}
+	\end{align}
+	
+	\begin{align}
+		\parcial{f}{u}(\overrightarrow{x})&=\nabla f(\overrightarrow{x})\cdot u \\ 
+		&=\parcial{f}{x_1}(x_1,\ldots,x_n)u_1+\parcial{f}{x_2}(x_1,\ldots,x_n)u_2+\cdots+\parcial{f}{x_n}(x_1,\ldots,x_n)u_n 
+	\end{align}
+	
+\end{verbatim*}
+
+\begin{align}
+\parcial{f}{u}(\overrightarrow{x})&=\nabla f(\overrightarrow{x})\cdot u \\ 
+&=\parcial{f}{x_1}(x_1,\ldots,x_n)u_1+\parcial{f}{x_2}(x_1,\ldots,x_n)u_2+\cdots+\parcial{f}{x_n}(x_1,\ldots,x_n)u_n \raisetag{-0.1cm}
+\end{align}
+
+\begin{align}
+	\parcial{f}{u}(\overrightarrow{x})&=\nabla f(\overrightarrow{x})\cdot u \\ 
+	&=\parcial{f}{x_1}(x_1,\ldots,x_n)u_1+\parcial{f}{x_2}(x_1,\ldots,x_n)u_2+\cdots+\parcial{f}{x_n}(x_1,\ldots,x_n)u_n 
+\end{align}
+
+
+\chapter{Teoremas y estructuras relacionadas}
+
+
+\begin{verbatim}
+	\newtheorem{thm}{Teorema}
+	\newtheorem{Def}{Definición}
+	\newtheorem{notacion}{Notación}
+\end{verbatim}
+
+\begin{Def}
+	Una función $f$ definida y acotada en un intervalo cerrado $[a,b]$ se dice Riemann integrable en [a,b], si el límite de la sumas de Riemann
+	\begin{equation}
+		\lim\limits_{\Delta x\to 0}\sum\limits_{k=1}^{n}f(x_i^{*})\Delta x
+	\end{equation}
+existe y su valor es independiente tanto de las particiones del intervalo como de la selección de  los valores $x_i^{*}$.
+\end{Def}
+
+
+\begin{notacion}
+El límite de las sumas de Riemann de  una función $f(x)$ Riemanna integrable en $[a,b]$ se llama la integral de Riemann de la función y se denota 
+\begin{equation*}
+	\int_{a}^{b}f(x)\, dx,
+\end{equation*}
+es decir,
+\begin{equation*}
+	\int_{a}^{b}f(x)\, dx=	\lim\limits_{\Delta x\to 0}\sum\limits_{k=1}^{n}f(x_i^{*})\Delta x
+\end{equation*}
+\end{notacion}
+
+\begin{thm}\label{thm21}
+	Si $f(x)$ es una función continua en el intervalo cerrado $[a,b]$, entonces la función definida por 
+	\begin{equation*}
+		F(x)=\int_{a}^{x}f(t)\, dt
+	\end{equation*}
+es deribable para todo $x\in(a,b)$, y 
+\begin{equation*}
+	\frac{dF}{dx}(x)=f(x)
+\end{equation*}
+para cada $x\in(a,b)$.
+\end{thm}
+
+Por el teorema  \eqref{thm21}...
+
+\section{Enlazar numeración de estructuras definidas con el comando \texttt{\textbackslash newtheorem}}
+
+\begin{verbatim}
+	\newtheorem{thm}{Teorema}[chapter]
+	\newtheorem{Corol}[thm]{Colorario}
+	\newtheorem{Prop}[thm]{Proposición}
+\end{verbatim}
+
+\begin{thm}
+	Teorema
+\end{thm}
+\begin{Corol}
+	Colorario
+\end{Corol}
+\begin{Prop}
+	Proposición
+\end{Prop}
+
+\begin{Def}
+	Definición
+\end{Def}
+
+\begin{nota}
+	Nota
+\end{nota}
+
+\section{El entorno \texttt{\textbackslash proof} del paquete \texttt{\textbackslash amsthm}}
+
+\begin{verbatim*}
+	\begin{proof}
+	Sea ...
+	\end{proof}
+	
+\end{verbatim*}
+
+	\begin{proof}
+	Sea ...
+\end{proof}
+
+
+\begin{verbatim*}
+	\begin{proof}[Prueba.]
+	Sea...
+	\end{proof}
+\end{verbatim*}
+
+\begin{proof}[Prueba.]
+	Sea...
+\end{proof}
+
+
+\end{document}

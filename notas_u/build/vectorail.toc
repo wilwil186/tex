@@ -1,4 +1,0 @@
-\babel@toc {spanish}{}
-\beamer@sectionintoc {1}{Preliminares}{2}{0}{1}
-\beamer@sectionintoc {2}{Identidad de Lagrange}{9}{0}{2}
-\beamer@sectionintoc {3}{Desigualdad de Cauchy-schwarz}{13}{0}{3}
