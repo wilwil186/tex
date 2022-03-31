@@ -1,15 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.18)  16 MAR 2022 20:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.10.18)  27 MAR 2022 07:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/wilson/Escritorio/tex/notas_u/contiuous Groups.tex"
-(/home/wilson/Escritorio/tex/notas_u/contiuous Groups.tex
+**/home/wilson/Escritorio/tex/notas_u/clase10.tex
+(/home/wilson/Escritorio/tex/notas_u/clase10.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count167
 \c@chapter=\count168
@@ -180,32 +180,76 @@ Package babel Info: Making > an active character on input line 707.
 )) (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks28
+) (/usr/share/texlive/texmf-dist/tex/latex/pb-diagram/pb-diagram.sty
+\dgARROWLENGTH=\skip55
+\dgTEXTARROWLENGTH=\skip56
+\dgHORIZPAD=\skip57
+\dgVERTPAD=\skip58
+\dgLABELOFFSET=\skip59
+\dgARROWPARTS=\count199
+\dgDOTSPACING=\skip60
+\dgDOTSIZE=\skip61
+\dgMAXSQUARE=\count266
+\dgMINDBLSQ=\count267
+\dgCOLUMNWIDTH=\skip62
+\dg@HORIZ=\count268
+\dg@VERT=\count269
+\dg@XLPAD=\count270
+\dg@YBPAD=\count271
+\dg@XRPAD=\count272
+\dg@YTPAD=\count273
+\dg@X=\count274
+\dg@Y=\count275
+\dg@XGRID=\count276
+\dg@YGRID=\count277
+\dg@SIZE=\count278
+\dg@USERSIZE=\count279
+\dg@DX=\count280
+\dg@DY=\count281
+\dg@XLBL=\count282
+\dg@YLBL=\count283
+\dg@XOFFSET=\count284
+\dg@YOFFSET=\count285
+\dg@LBLOFF=\count286
+\dg@XLBLOFF=\count287
+\dg@YLBLOFF=\count288
+\dg@LBLPOS=\count289
+\dg@XTEMP=\count290
+\dg@YTEMP=\count291
+\dg@ZTEMP=\count292
+\dg@XNODE=\count293
+\dg@YNODE=\count294
+\dg@XEND=\count295
+\dg@YEND=\count296
+\dg@WEND=\count297
+\dg@HEND=\count298
+\dg@COUNT=\count299
+\dg@NODEBOX=\box47
+\dg@LABONEBOX=\box48
+\dg@LABTWOBOX=\box49
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count199
-\mult@box=\box47
+\c@tracingmulticols=\count300
+\mult@box=\box50
 \multicol@leftmargin=\dimen155
-\c@unbalance=\count266
-\c@collectmore=\count267
-\doublecol@number=\count268
-\multicoltolerance=\count269
-\multicolpretolerance=\count270
+\c@unbalance=\count301
+\c@collectmore=\count302
+\doublecol@number=\count303
+\multicoltolerance=\count304
+\multicolpretolerance=\count305
 \full@width=\dimen156
 \page@free=\dimen157
 \premulticols=\dimen158
 \postmulticols=\dimen159
-\multicolsep=\skip55
-\multicolbaselineskip=\skip56
-\partial@page=\box48
-\last@line=\box49
+\multicolsep=\skip63
+\multicolbaselineskip=\skip64
+\partial@page=\box51
+\last@line=\box52
 \maxbalancingoverflow=\dimen160
-\mult@rightbox=\box50
-\mult@grightbox=\box51
-\mult@gfirstbox=\box52
-\mult@firstbox=\box53
-\@tempa=\box54
-\@tempa=\box55
-\@tempa=\box56
+\mult@rightbox=\box53
+\mult@grightbox=\box54
+\mult@gfirstbox=\box55
+\mult@firstbox=\box56
 \@tempa=\box57
 \@tempa=\box58
 \@tempa=\box59
@@ -240,200 +284,262 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box88
 \@tempa=\box89
 \@tempa=\box90
-\c@minrows=\count271
-\c@columnbadness=\count272
-\c@finalcolumnbadness=\count273
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\c@minrows=\count306
+\c@columnbadness=\count307
+\c@finalcolumnbadness=\count308
 \last@try=\dimen161
 \multicolovershoot=\dimen162
 \multicolundershoot=\dimen163
-\mult@nat@firstbox=\box91
-\colbreak@box=\box92
-\mc@col@check@num=\count274
+\mult@nat@firstbox=\box94
+\colbreak@box=\box95
+\mc@col@check@num=\count309
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip65
+\multirow@cntb=\count310
+\multirow@dima=\skip66
+\bigstrutjot=\dimen164
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen165
+\ar@mcellbox=\box96
+\extrarowheight=\dimen166
+\NC@list=\toks29
+\extratabsurround=\skip67
+\backup@length=\skip68
+\ar@cellbox=\box97
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/layout.sty
 Package: layout 2014/10/28 v1.2c Show layout parameters
-\oneinch=\count275
-\cnt@paperwidth=\count276
-\cnt@paperheight=\count277
-\cnt@hoffset=\count278
-\cnt@voffset=\count279
-\cnt@textheight=\count280
-\cnt@textwidth=\count281
-\cnt@topmargin=\count282
-\cnt@oddsidemargin=\count283
-\cnt@evensidemargin=\count284
-\cnt@headheight=\count285
-\cnt@headsep=\count286
-\cnt@marginparsep=\count287
-\cnt@marginparwidth=\count288
-\cnt@marginparpush=\count289
-\cnt@footskip=\count290
-\fheight=\count291
-\ref@top=\count292
-\ref@hoffset=\count293
-\ref@voffset=\count294
-\ref@head=\count295
-\ref@body=\count296
-\ref@foot=\count297
-\ref@margin=\count298
-\ref@marginwidth=\count299
-\ref@marginpar=\count300
-\Interval=\count301
-\ExtraYPos=\count302
-\PositionX=\count303
-\PositionY=\count304
-\ArrowLength=\count305
+\oneinch=\count311
+\cnt@paperwidth=\count312
+\cnt@paperheight=\count313
+\cnt@hoffset=\count314
+\cnt@voffset=\count315
+\cnt@textheight=\count316
+\cnt@textwidth=\count317
+\cnt@topmargin=\count318
+\cnt@oddsidemargin=\count319
+\cnt@evensidemargin=\count320
+\cnt@headheight=\count321
+\cnt@headsep=\count322
+\cnt@marginparsep=\count323
+\cnt@marginparwidth=\count324
+\cnt@marginparpush=\count325
+\cnt@footskip=\count326
+\fheight=\count327
+\ref@top=\count328
+\ref@hoffset=\count329
+\ref@voffset=\count330
+\ref@head=\count331
+\ref@body=\count332
+\ref@foot=\count333
+\ref@margin=\count334
+\ref@marginwidth=\count335
+\ref@marginpar=\count336
+\Interval=\count337
+\ExtraYPos=\count338
+\PositionX=\count339
+\PositionY=\count340
+\ArrowLength=\count341
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks29
-\verbatim@line=\toks30
+\every@verbatim=\toks30
+\verbatim@line=\toks31
 \verbatim@in@stream=\read3
+) (/usr/share/texlive/texmf-dist/tex/latex/base/graphpap.sty
+Package: graphpap 1994/08/09 v1.0c Standard LaTeX graphpap package (LL)
 )
-\c@Teorema=\count306
- (/usr/share/texmf/tex/latex/tipa/tipa.sty
-Package: tipa 2002/08/08 TIPA version 1.1
- (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
- (/usr/share/texmf/tex/latex/tipa/t3enc.def
-File: t3enc.def 2001/12/31 T3 encoding
-Now handling font encoding T3 ...
-... no UTF-8 mapping file for font encoding T3
-)))
-\c@thm=\count307
-\c@axiom[thm]=\count308
-\c@conj=\count309
-\c@Def=\count310
-\c@Ej=\count311
+\c@Teorema=\count342
+\c@thm=\count343
+\c@axiom[thm]=\count344
+\c@conj=\count345
+\c@Def=\count346
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count312
-\l__pdf_internal_box=\box93
-) (/home/wilson/Escritorio/tex/notas_u/build/contiuous Groups.aux
+\l__kernel_color_stack_int=\count347
+\l__pdf_internal_box=\box98
+) (/home/wilson/Escritorio/tex/notas_u/build/clase10.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
-\openout1 = `"contiuous Groups.aux"'.
+\openout1 = `clase10.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 61.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 61.
- (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
-File: t3cmr.fd 2001/12/31 TIPA font definitions
-)
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count313
-\scratchdimen=\dimen164
-\scratchbox=\box94
-\nofMPsegments=\count314
-\nofMParguments=\count315
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count316
-\MPscratchDim=\dimen165
-\MPnumerator=\count317
-\makeMPintoPDFobject=\count318
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count348
+\scratchdimen=\dimen167
+\scratchbox=\box99
+\nofMPsegments=\count349
+\nofMParguments=\count350
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen168
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
+\everyMPtoPDFconversion=\toks33
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
- (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-) (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
-Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)) (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)) (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 504.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 61.
-LaTeX Info: Redefining \% on input line 61.
-LaTeX Info: Redefining \degres on input line 61.
-LaTeX Info: Redefining \dots on input line 61.
-LaTeX Info: Redefining \up on input line 61.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 80.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \degres on input line 75.
+LaTeX Info: Redefining \dots on input line 75.
+LaTeX Info: Redefining \up on input line 75.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<imagenes/23.3-1.png, id=13, 694.595pt x 312.16624pt>
-File: imagenes/23.3-1.png Graphic file (type png)
-<use imagenes/23.3-1.png>
-Package pdftex.def Info: imagenes/23.3-1.png  used on input line 134.
-(pdftex.def)             Requested size: 347.29665pt x 156.08273pt.
- [2 <./imagenes/23.3-1.png>]
-<imagenes/23.3-2.png, id=20, 406.51875pt x 387.4475pt>
-File: imagenes/23.3-2.png Graphic file (type png)
-<use imagenes/23.3-2.png>
-Package pdftex.def Info: imagenes/23.3-2.png  used on input line 149.
-(pdftex.def)             Requested size: 203.25887pt x 193.72327pt.
- [3 <./imagenes/23.3-2.png>]
-<imagenes/23.4.png, id=27, 403.5075pt x 356.33125pt>
-File: imagenes/23.4.png Graphic file (type png)
-<use imagenes/23.4.png>
-Package pdftex.def Info: imagenes/23.4.png  used on input line 206.
-(pdftex.def)             Requested size: 201.75325pt x 178.16518pt.
- [4 <./imagenes/23.4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 226--259
+
+Package french.ldf Warning: OT1 encoding should not be used for French.
+(french.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+(french.ldf)                of your document; reported on input line 75.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-[5] [6] (/home/wilson/Escritorio/tex/notas_u/build/contiuous Groups.aux
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 111.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Overfull \hbox (48.42522pt too wide) in paragraph at lines 136--136
+[]\OT1/cmtt/m/n/12 1 & \multirow{3}{*}{Todas est^^San unidas} & 2 \\  \cline{1-1} \cline{3-3}[] 
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+Underfull \hbox (badness 7308) in paragraph at lines 189--189
+[]|$\OML/cmm/m/it/12 Hf\OT1/cmr/m/n/12 ([])$ no es
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--189
+\OT1/cmr/m/n/12 ni ne-ga-ti-va y
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3] [4]
+\GPT@outputbox=\box100
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+
+ []
+
+
+Overfull \hbox (16.4202pt too wide) in paragraph at lines 341--348
+[][] [] [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (20.71901pt too wide) in paragraph at lines 352--358
+[][] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 352--358
+
+ []
+
+[7]
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 465.
+LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 465.
+
+Underfull \vbox (badness 6658) has occurred while \output is active []
+
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9] [10]
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 541.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 542.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 556.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 557.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 558.
+
+
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 559.
+
+
+Overfull \hbox (36.7891pt too wide) in paragraph at lines 560--561
+ [] 
+ []
+
+
+Underfull \vbox (badness 4995) has occurred while \output is active []
+
+ [11]
+Overfull \hbox (36.7891pt too wide) in paragraph at lines 575--576
+ [] 
+ []
+
+[12] [13] (/home/wilson/Escritorio/tex/notas_u/build/clase10.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 ) ) 
 Here is how much of TeX's memory you used:
- 6048 strings out of 481239
- 81802 string characters out of 5920376
- 331953 words of memory out of 5000000
- 21206 multiletter control sequences out of 15000+600000
- 542181 words of font info for 65 fonts, out of 8000000 for 9000
+ 4805 strings out of 481239
+ 64814 string characters out of 5920376
+ 382645 words of memory out of 5000000
+ 19995 multiletter control sequences out of 15000+600000
+ 540697 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,7n,35p,373b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "/home/wilson/Escritorio/tex/notas_u/build/contiuous Groups.pdf" (6 pages, 193307 bytes).
+ 30i,22n,35p,578b,425s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcirclew.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/linew10.pfb>
+Output written on /home/wilson/Escritorio/tex/notas_u/build/clase10.pdf (13 pages, 139911 bytes).
 PDF statistics:
- 75 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 99 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,24 @@
+\babel@toc {spanish}{}
+\hfill \textbf {Página} \par 
+\contentsline {section}{\numberline {1}La Ecuación de Clase}{}{section.1}%
+\contentsline {section}{\numberline {2}Los teoremas de Sylow}{}{section.2}%
+\contentsline {section}{\numberline {3}Sea $S_{n}$ el grupo simétrico de n-letras. \\ Demuestre que $A_{n} \trianglelefteq S_{n}$}{}{section.3}%
+\contentsline {section}{\numberline {4}Operaciones básicas con matrices}{}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Suma de matrices}{}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Producto de un número real por una matriz}{}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Producto de matrices}{}{subsection.4.3}%
+\contentsline {section}{\numberline {5}tabla de distribución normal}{}{section.5}%
+\contentsline {section}{\numberline {6}Tabla de probabilidades puntuales de la distribución Binomial (n,p)}{}{section.6}%
+\contentsline {section}{\numberline {7}diagramas conmutativos}{}{section.7}%
+\contentsline {section}{\numberline {8}cajas}{}{section.8}%
+\contentsline {section}{\numberline {9}MATEMÁTICAS ACTUARIALES}{}{section.9}%
+\contentsline {subsection}{\numberline {9.1}tabla de mortalidad}{}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Anualidades contingentes}{}{subsection.9.2}%
+\contentsline {section}{\numberline {10}Ejercicio 39 de la sección 1.6 Blanchard}{}{section.10}%
+\contentsline {section}{\numberline {11}Ejercicio 25 de la sección 1.9 Blanchard}{}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Homogenea}{}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Particular}{}{subsection.11.2}%
+\contentsline {section}{\numberline {12}Ejercicio sobre la ecuación de Bessel}{}{section.12}%
+\contentsline {section}{\numberline {13}Grupos simples finito y campos finitos}{}{section.13}%
+\contentsline {section}{\numberline {14}Los grupos de Mathieu}{}{section.14}%
+\contentsline {section}{\numberline {15}Grupos continuos}{}{section.15}%
