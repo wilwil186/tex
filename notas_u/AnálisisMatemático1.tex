@@ -103,6 +103,22 @@
     reales. 
     \\ 
     \section{Los Axiomas de Cuerpo}
-    Junto con el conjunto $\mathbb{R}$ de los números reales adm
+    \section{Los Axiomas de Orden}
+    \begin{thm}
+        Sean a y b números reales tales que 
+        \begin{equation}
+            a \leq b + \epsilon \text{ para cada } \epsilon > 0
+        \end{equation}
+        Entonces $a \leq b$. 
+        \\ 
+        \textbf{Demostración}. si $b<a$ entonces la desigualdas (1) no se satisface para $\epsilon = (a-b)/2$
+        puesto que
+        \begin{equation*}
+            b + \epsilon = b + \frac{a-b}{2} = \frac{a+b}{2} < \frac{a+a}{2}=a \text{ } \to  b+\epsilon <a
+        \end{equation*}
+        lo cual es una contradicción y por el axioma 6(tricotomia), resulta que $a\leq b$. 
+        
+    \end{thm}
+    
     
 \end{document}
