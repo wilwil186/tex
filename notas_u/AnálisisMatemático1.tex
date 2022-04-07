@@ -3,6 +3,7 @@
 \usepackage[reqno]{amsmath} % Paquete para el manejo de expresiones matemáticas [reqno], [leqno] y [fleqn]
 \usepackage{amsthm}
 \usepackage{amssymb,amsmath,latexsym} %Paquete para llamar símbolos matemáticos
+\usepackage{tabularx,booktabs,ragged2e}
 \usepackage{amsfonts}
 \usepackage[mathscr]{euscript}
 \usepackage{graphicx} %paquete para el manejo de transformaciones geométricas de imagénes
@@ -39,6 +40,7 @@
 %% Nuevos teoremas
 \theoremstyle{plain}  % Requiere el paquete amsthm
 \newtheorem{thm}{Teorema}[section]
+\newtheorem*{Dem}{Demostración}
 \newtheorem{Corol}[thm]{Colorario}
 \newtheorem{Prop}[thm]{Proposición}
 \newtheorem{axiom[thm]}{Axioma}
@@ -59,7 +61,6 @@
 \usepackage{mathrsfs}
 \usepackage{graphicx}
 \usepackage{geometry}
-\usepackage{multicol}
 \usepackage{amsmath}
 \spanishdecimal{.}
 \usepackage{color}
@@ -69,9 +70,7 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{multicol}
-\usepackage{amsmath}
 \usepackage{amsfonts}
-\usepackage{amssymb}
 \usepackage{multicol}
 \usepackage{bbding}
 %\usepackage[manejador]{color,graphicx}
@@ -103,6 +102,7 @@
     reales. 
     \\ 
     \section{Los Axiomas de Cuerpo}
+    
     \section{Los Axiomas de Orden}
     \begin{thm}
         Sean a y b números reales tales que 
@@ -119,6 +119,22 @@
         lo cual es una contradicción y por el axioma 6(tricotomia), resulta que $a\leq b$. 
         
     \end{thm}
-    
-    
+    \section{La Representación geométrica de los números reales}
+    \section{Intervalos}
+    \section{Los enteros}
+    \section{Teorema de descomposición única para enteros}
+    \begin{thm}
+        Cada entero $n>1$ es primo o producto de primos. 
+        \begin{Dem}
+            Utilizaremos la inducción sobre n. El teorema se verifica trivialmente para n=2. Supongamos
+            que es cierto para cada entero k con $1<k<n$. si n no es primo, admite un divisor d con $1<d<n$. 
+            Por lo tanto $n=cd$, con $1<c<n$. Puesto que tanto c como d son $<n$, cada uno es primo o producto de 
+            primos; luego n es producto de primos. \textbf{QED}
+        \end{Dem}
+    \end{thm}
+    Antes de probar la parte (2), la unicidad de la descomposición, introduccieremos otros conceptos. 
+    Si $d|a$ y $d|b$, diremos que d es un divisor común de a y b. El teorema que sigue demuestra 
+    que cada par de eneteros 
+    \section{Los números racionales}
+    \section{Los números irracionales}    
 \end{document}
