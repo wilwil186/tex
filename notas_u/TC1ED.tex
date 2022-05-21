@@ -94,68 +94,58 @@
 \definecolor{gris-claro}{cmyk}{0,0,0,0.30}
 \definecolor{gris-oscuro}{cmyk}{0,0,0,0.50}
 
-
 \begin{document}
-    \chapter*{Introducción}
-    El Análisis matemático estudia conceptos relacionados de alguna manera con los números reales; 
-    por ello empezaremos nuestro estudio del Análisis con una discusión del sistema de los números 
-    reales. 
-    
-    \chapter{Números reales}
-    \section{Los Axiomas de Cuerpo}
-    Nosotros denotamos por $\mathbb{R}$ como un conjunto con ciertas operaciones que satisfacen todos
-    los axiomas listados en este capitulo, y lo llamaremos el conjunto de los números reales.
-    \\ 
-    \begin{Def}
-        \textbf{Adicción}.Para cada par de numeros reales x,y existe un número real asociado denotado 
-        por x + y, llamado la suma de x y y. la asociación $(x,y) \to x + y$ es llamada adicción, y tiene 
-        las siguientes propiedades:
-    \end{Def}
+    \chapter*{Ejercicios en parejas Corte 1}
+    \noindent
+    Wilson Eduardo Jerez Hernández, 20181167034 \\
+    El Juliancho parancho
+    \section*{Ejercicios 1.1}
+    \subsection*{21} 
+    Un estanque inicialmente contiene 1,000,000 galones de agua y una cantidad desconocida de un químico indeseable. 
+    El agua que contiene 0.01 g de este químico por galón fluye hacia el estanque a razón de 300 gal/h. 
+    La mezcla sale a la misma velocidad, por lo que la cantidad de agua en el estanque permanece constante. 
+    Suponga que el producto químico se distribuye uniformemente por todo el estanque. 
     \begin{itemize}
-        \item[A1.] Para todo $x,y,z\in \mathbb{R}$ Nosotros tenemos la asociativa, como: 
-            \begin{equation*}
-                (x + y) + z = x+(y+z)
-            \end{equation*}
-        \item[A2.] Existe un elemento 0 de $\mathbb{R}$ tal que $0+x=x+0=x$ para todo $x\in \mathbb{R}$
-        \item[A3.] Si $x$ es un elemento de $\mathbb{R}$, entonces existe un elemento $y\in \mathbb{R}$ 
-        tal que $x+y=y+x=0$   
-        \item[A4.] Para todo $x,y \in \mathbb{R}$ nosotros tenemos $x+y=y+x$ \textbf{conmutativa}
+        \item[(a)]Escriba una ecuación diferencial para la cantidad de sustancia química en el estanque en cualquier momento
+        \item[(b)] ¿Qué cantidad de producto químico habrá en el estanque después de un largo tiempo?
     \end{itemize}
-    \section{Los Axiomas de Orden}
-    
-
-
-    \begin{thm}
-        Sean a y b números reales tales que 
-        \begin{equation}
-            a \leq b + \epsilon \text{ para cada } \epsilon > 0
-        \end{equation}
-        Entonces $a \leq b$. 
-        \\ 
-        \textbf{Demostración}. si $b<a$ entonces la desigualdas (1) no se satisface para $\epsilon = (a-b)/2$
-        puesto que
+    \subsection*{27}
+    En cada uno de los problemas 26 a 33, dibuje un campo direccional para la ecuación diferencial dada. Con base en el campo de dirección, determine el comportamiento de y cuando
+    $t \to \infty$. Si este comportamiento depende del valor inicial de $y$ en $t = 0$, describa esta dependencia. Tenga en cuenta que los lados derechos de estas ecuaciones dependen tanto de $t$ como de $y$; por lo tanto, sus soluciones pueden exhibir un comportamiento más complicado que las del texto.
+    \\ 
+    \begin{itemize}
+        \item[*] $y'=te^{-2t}-2y$
+    \end{itemize}
+    \section*{Ejercicios 1.3}
+    \subsection*{14}
+    En cada uno de los problemas del 7 al 14, verifique que cada función dada sea una solución de la ecuación diferencial.
+    \begin{itemize}
+        \item[*] $y'-2ty=1$; $y=e^{t^{2}}\int_{0}^{t}e^{-s^{2}}ds+e^{t^{2}}$
+    \end{itemize}
+    \subsection*{30}
+    \subsection*{Preliminares} 
+    Un problema físico simple que conduce a una ecuación diferencial no lineal 
+    es el péndulo oscilante. El ángulo $\theta$ que forma un péndulo oscilante de longitud L con 
+    la dirección vertical (ver Figura 1) satisface la ecuación:
+    \begin{equation}
+        \frac{d^{2}\theta}{dt^{2}} + \frac{g}{L} \sin{\theta} = 0
+    \end{equation}
+    \begin{figure}[h]
+        \centering
+        \includegraphics[width=0.4\linewidth]{imagenes/EDC1.png}
+        \caption{Un péndulo oscilante.}
+      \end{figure} \\
+    Otra forma de derivar la ecuación del péndulo (0.0.1) se basa en el principio de conservación de la energía
+    \begin{itemize}
+        \item[(a)] Demuestre que la energía cinética T del péndulo en movimiento es
         \begin{equation*}
-            b + \epsilon = b + \frac{a-b}{2} = \frac{a+b}{2} < \frac{a+a}{2}=a \text{ } \to  b+\epsilon <a
+            T=\frac{1}{2}mL^{2}(\frac{d\theta}{dt})^{2}
         \end{equation*}
-        lo cual es una contradicción y por el axioma 6(tricotomia), resulta que $a\leq b$. 
-        
-    \end{thm}
-    \section{La Representación geométrica de los números reales}
-    \section{Intervalos}
-    \section{Los enteros}
-    \section{Teorema de descomposición única para enteros}
-    \begin{thm}
-        Cada entero $n>1$ es primo o producto de primos. 
-        \begin{Dem}
-            Utilizaremos la inducción sobre n. El teorema se verifica trivialmente para n=2. Supongamos
-            que es cierto para cada entero k con $1<k<n$. si n no es primo, admite un divisor d con $1<d<n$. 
-            Por lo tanto $n=cd$, con $1<c<n$. Puesto que tanto c como d son $<n$, cada uno es primo o producto de 
-            primos; luego n es producto de primos. \textbf{QED}
-        \end{Dem}
-    \end{thm}
-    Antes de probar la parte (2), la unicidad de la descomposición, introduccieremos otros conceptos. 
-    Si $d|a$ y $d|b$, diremos que d es un divisor común de a y b. El teorema que sigue demuestra 
-    que cada par de eneteros 
-    \section{Los números racionales}
-    \section{Los números irracionales}    
+        \item[(b)] Demuestre que la energía potencial V del péndulo, relativa a su posición de reposo, es
+        \begin{equation*}
+            V = mgL(1-\cos{\theta})
+        \end{equation*} 
+        \item[(c)] Por el principio de conservación de la energía, la energía total $E = T + V$ es constante. 
+        Calcule $dE/dt$, iguale a cero y demuestre que la ecuación resultante se reduce a la Eq. (0.0.1).
+    \end{itemize}
 \end{document}
