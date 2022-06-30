@@ -232,5 +232,34 @@
     \\ 
     3.  $x'= 3x^{\frac{2}{3}} $ \\ $x(2)=0$ \\ 
     4. $x'= 3x^{\frac{2}{3}} $ \\ $x(2)=1$ \\ 
-    
+    \section{Solución de una ecuación lineal no homogenea}
+    Consideremos la ecuación lineal: 
+    \begin{equation*}
+        x'=a(t)x+b(t) \text{ con } b(t) \not =0
+    \end{equation*}
+    Busquemos las soluciones que tengan la forma: 
+    \begin{equation*}
+        x(t) = f(t)e^{A(t)}
+    \end{equation*}
+    Este es un método llamado "variación de contantes" o "variación de paramatros". Entinces se obtiene que : 
+    \begin{equation*}
+        x(t) = ke^{A(t)} +e^{A(t)} \int e^{-A(t)}b(t)d(t)
+    \end{equation*}
+    $x(t)=x_{h}(t)+x_{p}(t)$ 
+    \\ $x_{p}(t) = e^{A(t)} \int e^{-A(t)}b(t)d(t)$ \\ 
+    Solución de 
+    $x'=a(t)x+b(x)$ \\ 
+    \section{Ecuación de Bernoulli}
+    Algunas ecuaciones no lineales pueden reducirse a ecuaiones lineales meduantge una sustitución adecacuda. 
+    Esto ocurre con la ecuación de Bernoulli: 
+    \\ 
+    \textbf{Ecuación de Bernoulli} 
+    es una ecuación de la forma. 
+    \begin{equation*}
+        x'+q(t)x=p(t)x^{n} \text{ con } n \not = 1
+    \end{equation*}
+    Mediante el cambio de variable $u = x^{1-n}$ la ecuación de Bernoulli se reduce a la ecua lienal en u: 
+    \begin{equation*}
+        u'+(1-n)q(t)u=(1-n)p(t3)
+    \end{equation*}
 \end{document}
