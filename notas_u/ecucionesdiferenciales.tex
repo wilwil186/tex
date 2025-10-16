@@ -26,7 +26,7 @@
     \url{https://www.youtube.com/watch?v=MdKOjS8-oNw&t=2142s} 
 
     \subsection{Importancia de las ecuaciones diferenciales}
-    La importantancia de las ecuaciones diferenciales son la expresión 
+     La importancia de las ecuaciones diferenciales son la expresión
     matemática de aquéllas leyes fundamentales 
     de la naturaleza que son formuladas en términos de razones de cambio
     de cantidades variables.
@@ -46,7 +46,7 @@
     y muchos otros.
     \subsection{Estudio de las soluciones de una ecuación diferencial}
 
-    el análisis de las soluciones tanto teóricas como numéricas de las ecuaciones
+     El análisis de las soluciones tanto teóricas como numéricas de las ecuaciones
     diferenciales es fundamental para la investigación y compresión de los fenómenos naturales
     o teóricos que representan; tanto el estudio de las propiedades generales de las ecuaciones, que nos 
     proporciona información valiosa que se puede aplicar en cada cado particular: como su complemento, la resolución numérica,
@@ -68,14 +68,14 @@
     
     \begin{enumerate}
         \item Según el Tipo: en ecuación diferencial o ecuación diferencial en derivadas parciales.
-        \item Según el orden: El orden de una ecuación diferncial corresponde al orden de la derivada más alta que aparece en la ecuación.
+        \item Según el orden: El orden de una ecuación diferencial corresponde al orden de la derivada más alta que aparece en la ecuación.
         \item Según la linealidad.
     \end{enumerate}
 
     \subsection{Ecuación diferencial ordinaria}
-    Una ecuación diferencial ordinaria (e.d.o) es una ecuación que relaciona 
+     Una ecuación diferencial ordinaria (edo) es una ecuación que relaciona
     una función desconocida de una variable con una o más funciones de sus derivadas.
-    En general, estas ecuaciones difernciales son expresadas del tipo
+     En general, estas ecuaciones diferenciales son expresadas del tipo
 
     \begin{equation}
         f(t,x(t),x'(t),..., x^{n}(t))=0
@@ -87,7 +87,7 @@
         \item x: variable dependiente, x=x(t) es una función que satisface (1)
         \item $F: I \times R^{n+1} \rightarrow R$ donde\\ 
         $(t,x(t),x'(t),...,x^{n}(t)) \rightarrow  F(t,x(t),x'(t),...,x^{n}(t))$
-        \item n: es el orden de la edo. COrresponde a la derivada de mayor orden que aparece 
+         \item n: es el orden de la edo. Corresponde a la derivada de mayor orden que aparece
         en la edo.
     \end{enumerate}
 
@@ -113,11 +113,11 @@
 
     \subsection{Solución de una edo de orden 1}
     Consideremos una edo de orden 1 en forma normal, es decir
-    \begin{equation*}
-        x'f(t,x)
-    \end{equation*}
-    donde f está definida en un subconjunto D de R 2 , que llamaremos
-    dominio de la ecuación. Además f : D → R se supondrá siempre
+     \begin{equation*}
+         x'=f(t,x)
+     \end{equation*}
+     donde f está definida en un subconjunto D de $\mathbb{R}^2$, que llamaremos
+     dominio de la ecuación. Además f : D → $\mathbb{R}$ se supondrá siempre
     continua.
     Una solución de esta edo es una función x = x(t) derivable en un
     intervalo abierto I y satisface que
@@ -128,57 +128,57 @@
     identidad.
     \newpage
 
-    \textbf{EJ}: Determine si la función dada es solución de la edo
+     \textbf{Ejemplo}: Determine si la función dada es solución de la edo
 
     \begin{enumerate}
-        \item $x''= x +e^{2t}$
+        \item $x'' = x + e^{2t}$
             \begin{itemize}
-                \item  $x_{1}(t)=\frac{1}{3}e^{2t}$\\
+                 \item  $x_{1}(t)=\frac{1}{3}e^{2t}$
                 Veamos ahora su derivada\\
-                $\rightarrow x'=\frac{1}{3}(e^{2t})' \rightarrow x'=\frac{1}{3}e^{2t}(2t)' \rightarrow x'=\frac{1}{3}e^{2t}2
+                $\rightarrow x'=\frac{1}{3}(e^{2t})'                  \rightarrow x'=\frac{1}{3}e^{2t} \cdot 2
                 \rightarrow x'=\frac{2}{3}e^{2t}$\\
                 Veamos ahora su segunda derivada\\
-                $\rightarrow x''=\frac{2}{3}(e^{2t})' \rightarrow x''=\frac{2}{3}e^{2t}(2t)' \rightarrow x''=\frac{2}{3}e^{2t}2
+                $\rightarrow x''=\frac{2}{3}(e^{2t})'                  \rightarrow x''=\frac{2}{3}e^{2t} \cdot 2
                 \rightarrow x''=\frac{4}{3}e^{2t}$\\ 
                 Ahora remplazamos\\
-                $\frac{4}{3}e^{2t}= \frac{1}{3}e^{2t} +e^{2t} \rightarrow \frac{4}{3}e^{2t} =  \frac{1}{3}e^{2t} + \frac{3}{3}e^{2t} 
+                 $\frac{4}{3}e^{2t} = \frac{1}{3}e^{2t} + e^{2t} \rightarrow \frac{4}{3}e^{2t} = \frac{1}{3}e^{2t} + \frac{3}{3}e^{2t}$
                 \rightarrow \frac{4}{3}e^{2t} = \frac{4}{3}e^{2t}$
-                \\ por tanto $x_{1}(t)=\frac{1}{3}e^{2t}$ es solución de la edo :)
+                \\                  por tanto $x_{1}(t)=\frac{1}{3}e^{2t}$ es solución de la edo.
                 
                 \item $x_{2}(t)=\frac{1}{2}e^{2t}$
                 Veamos ahora su derivada\\
-                $x'=\frac{1}{2}e^{2t}2 \rightarrow x'=e^{2t}$
+                 $x'=\frac{1}{2} \cdot 2 e^{2t} \rightarrow x'=e^{2t}$
                 Veamos ahora su segunda derivada\\
-                $x''= 2e^{2t}$\\ 
+                 $x''= 2 e^{2t}$
                 Ahora remplazamos\\
-                $2e^{2t}= \frac{1}{2}e^{2t} + e^{2t} \rightarrow 2e^{2t} =  \frac{3}{2}e^{2t} \rightarrow 4e^{2t} - 3e^{2t} =0
+                 $2e^{2t} = \frac{1}{2}e^{2t} + e^{2t} \rightarrow 2e^{2t} = \frac{3}{2}e^{2t} \rightarrow 4e^{2t} - 3e^{2t} =0$
                 \rightarrow e^{2t} \not = 0$\\ para cualquier valor de t, (pues la función exponencial es siempre positiva) 
-                por tanto $x_{2}(t)=\frac{1}{2}e^{2t}$ no es solución de la edo :(
+                 por tanto $x_{2}(t)=\frac{1}{2}e^{2t}$ no es solución de la edo.
             \end{itemize}
-        \item $x'=2tx\\  x(t)=e^{t^{2}}$\\ 
+         \item $x'=2tx$, $x(t)=e^{t^{2}}$
         Veamos ahora su derivada\\
-        $x'=2te^{t^{2}}$\\
+         $x'=2t e^{t^{2}}$
         Ahora remplazamos\\
-        $2e^{2t}= 2t(e^{t^{2}}) \rightarrow 2e^{2t}= 2e^{t^{2}}t \rightarrow t = 0$\\
-        por ende $x(t)=e^{t^{2}}$ es soloucion de la edo cuando t = 0. 
+         $2t e^{t^{2}} = 2t e^{t^{2}} \rightarrow t = 0$
+         por ende $x(t)=e^{t^{2}}$ es solución de la edo cuando t = 0.
         
-        \item $x'=-\frac{t}{x}$\\ el Dominio de la ecuación diferencial seria: $ D=\{(t,x)\in \mathbb{R}^{2}, x \not = 0\} $
+         \item $x'=-\frac{t}{x}$, el dominio de la ecuación diferencial sería: $ D=\{(t,x)\in \mathbb{R}^{2}, x \neq 0\} $
             \begin{itemize}
-                \item $x_{1}(t)=\sqrt{4-t^{2}}$\\ Veamos ahora su derivada\\
-                $x'=((4-t^{2})^{\frac{1}{2}})' \rightarrow x'= \frac{1}{2}(4-t^{2})^{-1/2}(4-t^{2})' \rightarrow -\frac{2t}{2\sqrt{4-t^{2}}}
-                \rightarrow x'= -\frac{t}{\sqrt{4-t^{2}}} $ \\
+                 \item $x_{1}(t)=\sqrt{4-t^{2}}$ Veamos ahora su derivada
+                 $x' = \frac{1}{2}(4-t^{2})^{-1/2} \cdot (-2t) = -\frac{t}{\sqrt{4-t^{2}}}$
+                 $x' = -\frac{t}{\sqrt{4-t^{2}}}$
                 Ahora remplazamos\\
                 $-\frac{t}{\sqrt{4-t^{2}}} = -\frac{t}{\sqrt{4-t^{2}}} $\\
-                por tanto $x_{1}(t)=\sqrt{4-t^{2}}$ es solución de la edo.\\ 
-                recordemos calcular el dominio de cada ecuación.
-                \item $x_{2}(t)=-\sqrt{4-t^{2}}$ \\ vemos ahora su derivada \\
-                $x'=\frac{t}{\sqrt{4-t^{2}}}$\\Ahora remplazamos\\
-                $\frac{t}{\sqrt{4-t^{2}}} \not = -\frac{t}{-\sqrt{4-t^{2}}} \rightarrow \frac{t}{\sqrt{4-t^{2}}} = \frac{t}{\sqrt{4-t^{2}}}$
-                \\ por tanto $x_{2}(t)=-\sqrt{4-t^{2}}$ es solución de la edo.
+                 por tanto $x_{1}(t)=\sqrt{4-t^{2}}$ es solución de la edo.
+                 Recordemos calcular el dominio de cada ecuación.
+                 \item $x_{2}(t)=-\sqrt{4-t^{2}}$ vemos ahora su derivada
+                 $x'=\frac{t}{\sqrt{4-t^{2}}}$ Ahora reemplazamos
+                 $\frac{t}{\sqrt{4-t^{2}}} \neq -\frac{t}{\sqrt{4-t^{2}}} \rightarrow \frac{t}{\sqrt{4-t^{2}}} = \frac{t}{\sqrt{4-t^{2}}}$
+                 por tanto $x_{2}(t)=-\sqrt{4-t^{2}}$ es solución de la edo.
             \end{itemize}
     \end{enumerate}
     \subsection{Campos de direcciones}
-    \url{https://www.youtube.com/watch?v=40WLcnRAqdo}\\ 
+     \url{https://www.youtube.com/watch?v=40WLcnRAqdo}
     Este curso se enfoca en el estudio de las soluciones de las ecuaciones
     diferenciales.
     Muchas veces es de mayor interés conocer el comportamiento cualitativo
@@ -186,41 +186,41 @@
     soluciones de una edo, en lugar de conocer explícitamente las soluciones
     de la edo usando un método analítico.
     Los campos de direcciones son una herramienta valiosa en el estudio de
-    las soluciones de ecuación diferenciales de primer orden, es decir para
+     las soluciones de ecuaciones diferenciales de primer orden, es decir para
     ecuaciones de la forma
     \begin{equation*}
         x'=f(t,x)
     \end{equation*}
-    con f continua.\\ 
-    interpretación geométrica de $x'=f(t,x)$
+     con f continua.
+     Interpretación geométrica de $x'=f(t,x)$
     x'(t) es la pendiente de la recta tangente a la curva, x = x(t) en el punto (t,x(t))
-    la ecuación de la rectan tangente L está dada por $(t_{1},x_{1})$: $x(t)=x_{1}+f(t_{1},x_{1})(t-t_{1})$\\ 
-    ¿cómo se construye el campo de direcciones? 
-    \\ a cada punto (t,x) del dominio de D de la ecuación diferencial se le aisgna una única recta que pasa por 
-    (t,x) cuya pendiente esta dada po rel valo de f en el (t,x)
+     la ecuación de la recta tangente L está dada por $(t_{1},x_{1})$: $x(t)=x_{1}+f(t_{1},x_{1})(t-t_{1})$
+     ¿Cómo se construye el campo de direcciones?
+     A cada punto (t,x) del dominio de D de la ecuación diferencial se le asigna una única recta que pasa por
+     (t,x) cuya pendiente está dada por el valor de f en el (t,x)
     \\ 
-    \textbf{ejercicio}: realizar el campo de direcciones de x' = t + x\\ 
-    \subsection{Líneas Isoclinas}
+     \textbf{Ejercicio}: realizar el campo de direcciones de x' = t + x
+     \subsection{Líneas isoclinas}
     De especial interés es el estudio goemétrico de las ecuauciones f(t,x)=c donde c es cualquier valor realizar
-    a estas curvas se les conoce como Líneas isoclinas. son curvas pero resiven el nombre de Líneas isoclinas.
+     a estas curvas se les conoce como líneas isoclinas. Son curvas pero reciben el nombre de líneas isoclinas.
     Estas permiten deducir un campo de direcciones más fiable
     \subsection{Estudio de la ecuación}
     \textbf{$x'=ax, a \in \mathbb{R}$} x'= ax es una familia de edo de primer orden.
     \\ 
-    \textbf{EJ}
-    \begin{itemize}
-        \item $a = 1\to x'=x$
-        \item $a = 0\to x'=0$
-        \item $a = 2\to x'=2$
-    \end{itemize}
+     \textbf{Ejemplos}
+     \begin{itemize}
+         \item $a = 1\to x'=x$
+         \item $a = 0\to x'=0$
+         \item $a = 2\to x'=2x$
+     \end{itemize}
     \section{Teorema de existencia y unicidad de soluciones}
     $\frac{dx}{dt} = f(t,x)$, $x(a)=b$
     \begin{itemize}
-        \item $f(t,x)$ continua en algún rectángulo que contiene (a,b), \textbf{existe solución}
-        \item $\frac{\partial f }{\partial x}$ continua en ese rectángulo \textbf{Es única solución}
+         \item $f(t,x)$ continua en algún rectángulo que contiene (a,b), \textbf{existe solución}
+         \item $\frac{\partial f }{\partial x}$ continua en ese rectángulo \textbf{es única solución}
     \end{itemize}
-    \textbf{Ejercicio:} Establecer si el P.V.I dado tiene solución unica: \\ 
-    1. $x'= \frac{x}{t} $ \\ $x(0)=0$ \\ \textbf{¿f es continua es (0,0)?} No. Luego, no es posible encontrar un intervalo centrado en (0,0)
+     \textbf{Ejercicio:} Establecer si el P.V.I dado tiene solución única: \\
+     1. $x'= \frac{x}{t} $ \\ $x(0)=0$ \\ \textbf{¿f es continua en (0,0)?} No. Luego, no es posible encontrar un intervalo centrado en (0,0)
     donde f sea continua. \\ 
     por el teroema de existencia y unicidad no garantiza ni siquiera la existencia de soluciones al P.V.I. \\ 
     2. $x'= \frac{x}{t} $ \\ $x(t_{0})=0, t_{0} \not = 0$ \\ 
