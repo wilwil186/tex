@@ -36,6 +36,8 @@ Comparte con la comunidad en la sección de comentarios tu historia y responde a
 
 ## Conclusión
 Finalmente, podemos decir que aprender Portugués como toda lengua es una experiencia, que nos puede dar muchísimos beneficios, pero que debemos cuidar con una razón, para que no se agote nuestra motivación.
+
+Contribución creada con los aportes de: Ismael H
 Lucía Bazán
 Lucía Bazán
 

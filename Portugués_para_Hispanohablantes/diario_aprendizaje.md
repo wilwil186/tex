@@ -36,6 +36,8 @@ Comparte en la sección de comentarios ¿Qué crees que necesitas para aprender 
 ## Conclusión
 En resumen, podemos decir que crear nuestro diario de aprendizaje nos ayudará a ver nuestro progreso, pero también a mejorar nuestros métodos de estudio y tener un lugar donde poner los retos que se nos presentan en el idioma.
 
+Contribución creada con los aportes de: Ismael H
+
 ## Recursos Recomendados
 - [Notion](https://www.notion.so) – Espacio de trabajo para notas, tareas y bases de datos.
 Contribución creada con los aportes de: Ismael H
