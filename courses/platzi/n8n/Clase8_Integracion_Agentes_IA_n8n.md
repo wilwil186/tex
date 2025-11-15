@@ -37,6 +37,28 @@ Activa modelo desde OpenAI con credenciales seguras.
 3. Copia API key y pégala en n8n.
 4. Elige modelo: GPT-4-1 mini suficiente para clasificar leads.
 
+## Usar agentes de IA con modelos open-source usando Ollama
+Para usar modelos open-source sin costos, instala Ollama y ejecuta un modelo localmente. n8n puede conectarse a Ollama vía API para agentes de IA.
+
+### Instalar Ollama
+1. Descarga Ollama desde https://ollama.ai/download.
+2. Instala en tu sistema (Linux, macOS, Windows).
+3. Ejecuta un modelo, ej.: `ollama run llama2` (descarga automáticamente si no tienes el modelo).
+
+### Configurar n8n para usar Ollama
+1. Asegúrate que Ollama esté corriendo (puerto 11434 por defecto).
+2. En n8n, usa el nodo "Ollama Chat" en lugar de AI Agent para interacciones simples.
+3. Para agentes avanzados, configura el AI Agent para usar un modelo local si n8n lo soporta, o usa HTTP Request para llamar a la API de Ollama.
+4. Crea credenciales si es necesario, pero Ollama no requiere API key por defecto.
+5. En el nodo, especifica el modelo (ej.: llama2) y el prompt del system message como antes.
+
+### Ventajas de Ollama
+- Gratuito y local: no dependes de APIs externas.
+- Privacidad: datos no salen de tu máquina.
+- Modelos variados: Llama, Mistral, etc.
+
+Prueba con el mismo system message para clasificar leads. Si n8n no soporta directamente, usa el nodo HTTP Request para POST a http://localhost:11434/api/generate con el prompt.
+
 ## Probar workflow con lead real
 Ejecuta workflow y usa mensajes naturales que impliquen intención.
 
