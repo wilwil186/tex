@@ -1,42 +1,8 @@
-Personalización de correos de soporte con IA y plantillas HTML
-Curso de Automatizaciones con n8n
-Personalización de correos de soporte con IA y plantillas HTML
-Clase 12 de 14 • Curso de Automatizaciones con n8n
+# Personalización de correos de soporte con IA y plantillas HTML
 
+Para más contexto, revisa [Clase 11: Automatización de flujo de compra con notificación y seguimiento](Clase11_Automatizacion_Flujo_Compra_n8n.md).
 
-
-Clase anterior
-
-Ver clases
-Siguiente clase
-Si recuerdas, en clases anteriores dividíamos el caso de soporte entre cliente enfadado
-
-Play
-
-Regresa 15 segundos
-
-Adelanta 15 segundos
-Current Time 
-0:00
-/
-Duration 
-11:36
-
-Mute
-1x
-Playback Rate
-
-Subtitles
-
-Picture-in-Picture
-
-Fullscreen
-Lecturas recomendadas
-https://chatgpt.com/
-
-Curso de ChatGPT
-
-Resumen
+## Resumen
 Optimiza el soporte al cliente con un flujo claro y profesional: desde detectar el sentimiento hasta enviar correos personalizados con IA, usar plantillas en HTML y CSS compatibles con Gmail y registrar incidencias en Google Sheets. Aquí verás cómo se conectan los nodos, cómo mapear campos y cómo acelerar pruebas con pin/unpin para un proceso ágil y confiable.
 
 ¿Cómo estructurar el flujo de soporte con IA y sentimiento positivo?
@@ -76,53 +42,6 @@ Cabeceras y mapeo: nombre, email, fecha de incidencia desde “submitted at”.
 Columna adicional: “error del cliente” para recoger el mensaje exacto.
 Ejecución del workflow: validar que los datos llegan a la hoja.
 ¿Quieres que el flujo sea extensible y fácil de entender en tu equipo? Comparte qué ampliarías o qué nodo agregarías en los comentarios.
-
-
-Idir
-Haz una pregunta a Idir
-
-
-Escribe tu comentario o pregunta
-
-Más votados
-Nuevos
-Favoritos
-gemma clavero del moral
-gemma clavero del moral
-
-student
-•
-hace 3 meses
-Comparto Prompt:
-
-Genera un template en html y css que sea compatible con Gmail para dar la bienvenida a mi cliente que acaba de comprar nuestro producto. Que se vea profesional y con una cabecera que genere engagement. El cuerpo del mensaje ya esta predefinido así que deja un placeholder que diga CUERPO_AQUI
-
-
-58
-
-Responder
-
-Reportar
-Daniel Hidalgo
-Daniel Hidalgo
-
-student
-•
-hace 11 días
-Gracias por tomarte el tiempo de compartirnos
-
-
-2
-Pedro jair casilimas
-Pedro jair casilimas
-
-student
-•
-hace 4 días
-Muchas gracias
-
-
-1
 Santiago Rodz
 Santiago Rodz
 
