@@ -89,7 +89,7 @@ Sí, en n8n puedes conectarte a bases de datos en lugar de usar hojas de cálcul
 
 Responder
 
-Reportar
+cs
 Javier Camilo Torres Vera
 Javier Camilo Torres Vera
 
