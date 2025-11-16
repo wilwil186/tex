@@ -41,7 +41,7 @@ Docker ofrece múltiples ventajas que lo hacen esencial en el desarrollo moderno
 - **Integración Continua y Despliegue Continuo (CI/CD)**: Se integra perfectamente con herramientas de CI/CD, permitiendo la automatización del proceso de construcción, prueba y despliegue. [00:00].
 
 ## ¿Quién te guía en este curso?
-Amin Espinoza, instructor de Platzi, te acompañará en este curso para que aprendas Docker de manera efectiva. Si tienes dudas, puedes compartirlas para resolverlas.
+El instructor de Platzi te acompañará en este curso para que aprendas Docker de manera efectiva. Si tienes dudas, puedes compartirlas para resolverlas.
 
 ## ¿Qué vas a lograr paso a paso?
 - Comprender los fundamentos de Docker y los contenedores. [00:00].
